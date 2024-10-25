@@ -1,0 +1,39 @@
+---
+openapi: 3.0.0
+info:
+  version: 0.9.0-pre.0
+  title: OpenAPI Okta IP Ranges
+  description: OpenAPI specification and a set of generated API clients for Okta IP Ranges
+  license:
+    name: MPL-2.0
+  contact:
+    name: OpenAPI Clients Factory
+    url: https://github.com/oapicf/openapi-okta-ip-ranges
+    email: blah+oapicf@cliffano.com
+servers:
+  - url: https://s3.amazonaws.com/okta-ip-ranges
+
+paths:
+  /ip_ranges.json:
+    get:
+      summary: Retrieve Okta IP ranges
+      description: Returns IP ranges organized by regional cell names.
+      responses:
+        '200':
+          description: A JSON object of regional cells with IP ranges.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: object
+                  properties:
+                    ip_ranges:
+                      type: array
+                      items:
+                        type: string
+                        description: IP range in CIDR notation
+                  description: Object containing IP ranges for a specific regional cell
+      externalDocs:
+        description: Okta IP Ranges Documentation
+        url: https://help.okta.com/en-us/content/topics/security/ip-address-allow-listing.htm
