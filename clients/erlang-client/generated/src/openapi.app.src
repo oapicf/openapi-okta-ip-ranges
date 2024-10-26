@@ -1,0 +1,18 @@
+{application, openapi,
+ [{description, "OpenAPI specification and a set of generated API clients for Okta IP Ranges"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+    [kernel,
+     stdlib,
+     ssl,
+     hackney,
+     ctx
+    ]},
+  {env, [{host, "s3.amazonaws.com"}]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["MPL-2.0"]},
+  {links, ["https://github.com/oapicf/openapi-okta-ip-ranges"]}
+]}.

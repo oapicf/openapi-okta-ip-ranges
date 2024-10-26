@@ -1,0 +1,18 @@
+{
+  "namespace": "model",
+  "type": "record",
+  "doc": "Object containing IP ranges for a specific regional cell",
+  "name": "IpRangesJsonGet200ResponseValue",
+  "fields": [
+    {
+      "name": "ip_ranges",
+      "type": ["null", {
+        "type": "array",
+        "items": "string"
+      }],
+      "doc": "",
+      "default": null
+    }
+  ]
+
+}

@@ -1,0 +1,6 @@
+## DefaultApi
+
+### Retrieve Okta IP ranges
+## Retrieve Okta IP ranges
+GET https://s3.amazonaws.com/okta-ip-ranges/ip_ranges.json
+Accept: application/json

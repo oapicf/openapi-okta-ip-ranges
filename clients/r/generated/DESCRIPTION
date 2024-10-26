@@ -1,0 +1,15 @@
+Package: openapi
+Title: R Package Client for OpenAPI Okta IP Ranges
+Version: 1.0.0
+Author: person("OpenAPI Okta IP Ranges", email = "blah+oapicf@cliffano.com", role = c("aut", "cre"))
+Maintainer: OpenAPI Okta IP Ranges <blah+oapicf@cliffano.com>
+Description: OpenAPI specification and a set of generated API clients for Okta IP Ranges
+URL: https://github.com/oapicf/openapi-okta-ip-ranges
+BugReports: https://github.com/oapicf/openapi-okta-ip-ranges/issues
+Depends: R (>= 3.3)
+Encoding: UTF-8
+License: MPL-2.0
+LazyData: true
+Suggests: testthat
+Imports: jsonlite, httr, R6, base64enc, stringr
+RoxygenNote: 7.2.1

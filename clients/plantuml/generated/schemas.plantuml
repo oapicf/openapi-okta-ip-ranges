@@ -1,0 +1,11 @@
+@startuml
+
+title OpenAPI Okta IP Ranges Schemas Diagram
+
+entity IpRangesJsonGet200ResponseValue {
+    ip_ranges: List<String>
+}
+
+
+
+@enduml

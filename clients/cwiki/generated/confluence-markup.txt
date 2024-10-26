@@ -1,0 +1,67 @@
+h1. OpenAPI Okta IP Ranges
+
+OpenAPI specification and a set of generated API clients for Okta IP Ranges
+
+*Version:* 0.9.0-pre.0
+
+----
+
+{expand:Table of Contents - Click to expand}
+{toc:printable=true|style=square|minLevel=2|maxLevel=3|type=list|outline=false|include=.*}
+{expand}
+
+h2. Endpoints
+
+
+h3. ipRangesJsonGet
+{panel:title=ipRangesJsonGet|borderStyle=solid|borderColor=#003b6f|titleBGColor=#003b6f|titleColor=#a6b8c7|bgColor=#ffffff}
+    *Summary:* Retrieve Okta IP ranges
+    *Description:* Returns IP ranges organized by regional cell names.
+
+	|| HttpMethod | {status:colour=Yellow|title=get|subtle=false} |
+    || Protocol | {noformat:nopanel=true}https{noformat} |
+    || Path | {noformat:nopanel=true}/ip_ranges.json{noformat} |
+    || Base Path | {noformat:nopanel=true}https://s3.amazonaws.com/okta-ip-ranges{noformat} |
+    || Produces | {noformat:nopanel=true}application/json {noformat} |
+----
+h4. Parameters
+
+
+
+----
+h4. Responses
+
+    	|| Status Code | {status:colour=Green|title=200|subtle=false} |
+    	|| Message | A JSON object of regional cells with IP ranges. |
+    	|| Response Type | map[String, _ip_ranges_json_get_200_response_value] |
+    	|| Response Model | [map[String, _ip_ranges_json_get_200_response_value] Model|#map[String, _ip_ranges_json_get_200_response_value]ModelAnchor|Jump to model] |
+    	|| Response Schema | {code:collapse=true}{
+  "description" : "A JSON object of regional cells with IP ranges.",
+  "content" : {
+    "application/json" : {
+      "schema" : {
+        "type" : "object",
+        "additionalProperties" : {
+          "$ref" : "#/components/schemas/_ip_ranges_json_get_200_response_value"
+        }
+      }
+    }
+  }
+}{code} |
+       
+
+{panel}
+
+
+{anchor:models}
+h2. Models
+
+        {anchor:IpRangesJsonGet200ResponseValueModelAnchor}
+        h3. IpRangesJsonGet200ResponseValue
+
+        Object containing IP ranges for a specific regional cell
+
+        
+        ||Field Name||Required||Type||Description||Enum||Example||
+         |ip_ranges |(x) |{noformat:nopanel=true}array[String]{noformat} |  |  | null
+         

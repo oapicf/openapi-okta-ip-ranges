@@ -1,0 +1,7 @@
+.gitignore
+.openapi-generator-ignore
+git_push.sh
+project.clj
+src/open_api_okta_ip_ranges/api/default.clj
+src/open_api_okta_ip_ranges/core.clj
+src/open_api_okta_ip_ranges/specs/_ip_ranges_json_get_200_response_value.clj

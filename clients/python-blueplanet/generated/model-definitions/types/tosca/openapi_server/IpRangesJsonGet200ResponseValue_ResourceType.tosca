@@ -1,0 +1,36 @@
+"$schema"   = "http://cyaninc.com/json-schemas/tosca-lite-v1/definition-module#"
+title       = "openapi_server IpRangesJsonGet200ResponseValue"
+package     = openapi_server
+version     = "1.0"
+description = "Defines a IpRangesJsonGet200ResponseValue"
+authors     = ["F. Bar (foo@bar.baz)"]
+
+imports {
+  Root = tosca.resourceTypes.Root
+}
+resourceTypes {
+
+  IpRangesJsonGet200ResponseValue {
+    title = IpRangesJsonGet200ResponseValue
+    description = IpRangesJsonGet200ResponseValue
+    derivedFrom = Root
+    properties {
+        ip_ranges {
+          type = array
+          items.type =  string
+          description = ""
+          optional = false
+        }
+    }
+  }
+}
+
+serviceTemplates {
+
+  IpRangesJsonGet200ResponseValue {
+    title = IpRangesJsonGet200ResponseValue
+    description = IpRangesJsonGet200ResponseValue
+    implements = openapi_server.resourceTypes.IpRangesJsonGet200ResponseValue
+
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:schemas="http://localhost/soap/ServiceV1/model" xmlns:wsdl="http://localhost/soap/ServiceV1/service" targetNamespace="http://localhost/soap/ServiceV1/service" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:tns="http://localhost/soap/ServiceV1/model" targetNamespace="http://localhost/soap/ServiceV1/model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="GetIp_ranges.json_RequestMessage" type="schemas:GetIp_ranges.json_RequestMessage" />
+      <xs:element name="GetIp_ranges.json_ResponseMessage" type="schemas:GetIp_ranges.json_ResponseMessage" />
+      <xs:complexType name="IpRangesJsonGet200ResponseValue">
+        <xs:annotation>
+          <xs:documentation>Object containing IP ranges for a specific regional cell</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ip_ranges" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetIp_ranges.json_RequestMessage" />
+      <xs:complexType name="GetIp_ranges.json_ResponseMessage">
+        <xs:sequence>
+          <xs:element minOccurs="1" name="response" type="xs:_ip_ranges_json_get_200_response_value">
+            <xs:annotation>
+              <xs:documentation>A JSON object of regional cells with IP ranges.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="GetIp_ranges.json_RequestMessage">
+    <part name="GetIp_ranges.json_RequestMessage" element="schemas:GetIp_ranges.json_RequestMessage" />
+  </message>
+  <message name="GetIp_ranges.json_ResponseMessage">
+    <part name="GetIp_ranges.json_ResponseMessage" element="schemas:GetIp_ranges.json_ResponseMessage" />
+  </message>
+  <portType name="ServiceV1_PortType">
+    <operation name="GetIp_ranges.json">
+      <documentation>Returns IP ranges organized by regional cell names.</documentation>
+      <input message="wsdl:GetIp_ranges.json_RequestMessage" />
+      <output message="wsdl:GetIp_ranges.json_ResponseMessage">
+        <documentation>A JSON object of regional cells with IP ranges.</documentation>
+      </output>
+    </operation>
+  </portType>
+  <binding name="ServiceV1_Binding" type="wsdl:ServiceV1_PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="GetIp_ranges.json">
+      <soap:operation soapAction="GetIp_ranges.json" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output>
+        <soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServiceV1">
+    <documentation>OpenAPI specification and a set of generated API clients for Okta IP Ranges</documentation>
+    <port name="default_Port" binding="wsdl:ServiceV1_Binding">
+      <soap:address location="http://localhost/soap/ServiceV1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

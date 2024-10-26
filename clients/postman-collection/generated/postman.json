@@ -1,0 +1,70 @@
+{
+	"info": {
+		"name": "OpenAPI Okta IP Ranges",
+		"description": {
+		    "content": "OpenAPI specification and a set of generated API clients for Okta IP Ranges",
+		    "type": "text/markdown"
+		},
+		"version": "0.9.0-pre.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+	        {
+	            "name": "default",
+	            "item": [
+	                        {
+    "name": "/ip_ranges.json",
+                "description": "Returns IP ranges organized by regional cell names.",
+                 "item": [
+                            {
+                                "name": "Retrieve Okta IP ranges",
+                                "request": {
+                                    "method": "GET",
+                                    "header": [
+                                        {
+                                            "key": "Accept",
+                                            "value": "application/json",
+                                            "description": "",
+                                            "disabled": false
+                                        }
+                                    ],
+                                    "body": {
+                                        "mode": "raw",
+                                        "raw": "",
+                                        "options": {
+                                            "raw": {
+                                                "language": "json"
+                                            }
+                                        }
+                                    },
+                                    "url": {
+                                        "raw": "{{baseUrl}}/ip_ranges.json",
+                                        "host": [
+                                            "{{baseUrl}}"
+                                        ],
+                                        "path": [
+                                            "ip_ranges.json"
+                                        ],
+                                        "variable": [
+                                        ],
+                                        "query": [
+                                        ]
+                                    },
+                                    "description": "Returns IP ranges organized by regional cell names."
+                                }
+                            }
+                            ]
+                        }
+	                    ]
+	        }
+    ],
+    
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://s3.amazonaws.com/okta-ip-ranges",
+			"type": "string"
+        }
+	]
+}
+

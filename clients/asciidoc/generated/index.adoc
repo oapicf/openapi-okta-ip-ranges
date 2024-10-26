@@ -1,0 +1,125 @@
+= OpenAPI Okta IP Ranges
+blah+oapicf@cliffano.com
+0.9.0-pre.0
+:toc: left
+:numbered:
+:toclevels: 4
+:source-highlighter: highlightjs
+:keywords: openapi, rest, OpenAPI Okta IP Ranges
+:specDir: 
+:snippetDir: 
+:generator-template: v1 2019-12-20
+:info-url: https://github.com/oapicf/openapi-okta-ip-ranges
+:app-name: OpenAPI Okta IP Ranges
+
+[abstract]
+.Abstract
+OpenAPI specification and a set of generated API clients for Okta IP Ranges
+
+
+// markup not found, no include::{specDir}intro.adoc[opts=optional]
+
+
+
+== Endpoints
+
+
+[.Default]
+=== Default
+
+
+[.ipRangesJsonGet]
+==== ipRangesJsonGet
+
+`GET /ip_ranges.json`
+
+Retrieve Okta IP ranges
+
+===== Description
+
+Returns IP ranges organized by regional cell names.
+
+
+// markup not found, no include::{specDir}ip_ranges.json/GET/spec.adoc[opts=optional]
+
+
+
+===== Parameters
+
+
+
+
+
+
+
+===== Return Type
+
+map[<<_ip_ranges_json_get_200_response_value>>]
+
+
+===== Content Type
+
+* application/json
+
+===== Responses
+
+.HTTP Response Codes
+[cols="2,3,1"]
+|===
+| Code | Message | Datatype
+
+
+| 200
+| A JSON object of regional cells with IP ranges.
+| Map[<<_ip_ranges_json_get_200_response_value>>] 
+
+|===
+
+===== Samples
+
+
+// markup not found, no include::{snippetDir}ip_ranges.json/GET/http-request.adoc[opts=optional]
+
+
+// markup not found, no include::{snippetDir}ip_ranges.json/GET/http-response.adoc[opts=optional]
+
+
+
+// file not found, no * wiremock data link :ip_ranges.json/GET/GET.json[]
+
+
+ifdef::internal-generation[]
+===== Implementation
+
+// markup not found, no include::{specDir}ip_ranges.json/GET/implementation.adoc[opts=optional]
+
+
+endif::internal-generation[]
+
+
+[#models]
+== Models
+
+
+[#IpRangesJsonGet200ResponseValue]
+=== _IpRangesJsonGet200ResponseValue_ 
+
+Object containing IP ranges for a specific regional cell
+
+
+[.fields-IpRangesJsonGet200ResponseValue]
+[cols="2,1,1,2,4,1"]
+|===
+| Field Name| Required| Nullable | Type| Description | Format
+
+| ip_ranges
+| 
+| 
+|   List   of <<string>>
+| 
+|     
+
+|===
+
+
+
