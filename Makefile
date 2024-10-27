@@ -177,9 +177,10 @@ build-python:
 	  python3 setup.py install
 
 build-ruby:
+	apt-get install libyaml-dev
 	cd clients/ruby/generated/ && \
 	  find . -name '*.gem' -delete && \
-	  gem install bundler --version=1.17.3 && \
+	  gem install bundler && \
 	  bundle install --binstubs && \
 	  gem build *.gemspec && \
 	  gem install ./*.gem
