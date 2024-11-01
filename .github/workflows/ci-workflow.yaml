@@ -16,10 +16,11 @@ jobs:
           file-path: '/tmp/.env'
         env:
           GITHUB_ACTIONS: ${{ env.GITHUB_ACTIONS }}
-      - uses: cliffano/command-docker-action@v1.1.0
+          PATH: /usr/local/node/bin:${{ env.PATH }}
+      - uses: cliffano/command-docker-action@v1.2.0
         with:
           command: 'make ci'
-          image: cliffano/studio
+          image: cliffano/studio:2.5.0
           shell: bash
           env_file: '/tmp/.env'
       - run: npm install -g gh-pages
