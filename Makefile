@@ -159,7 +159,7 @@ generate-primary:
 # API clients building targets for primary languages
 
 build-javascript:
-	npm install -g babel-cli
+	npm install -g babel-cli mocha
 	npm install validator
 	cd clients/javascript/generated/ && \
 	  npm install && \
