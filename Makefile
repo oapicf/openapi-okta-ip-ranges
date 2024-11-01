@@ -191,6 +191,7 @@ build-ruby:
 test-javascript: build-javascript
 	cd clients/javascript/generated/ && \
 	  npm run test
+	npm install -g mocha
 	mocha --timeout 5000 test/javascript/
 
 test-python: build-python
