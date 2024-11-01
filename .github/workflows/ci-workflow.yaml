@@ -11,17 +11,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - uses: iamsauravsharma/create-dotenv@v2.0.1
-        with:
-          file-path: '/tmp/.env'
-        env:
-          GITHUB_ACTIONS: ${{ env.GITHUB_ACTIONS }}
-          PATH: /usr/local/go/bin:/usr/local/maven/bin:/usr/local/node/bin:/usr/local/openjdk-jdk/bin:/root/.cargo/bin:/root/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:${{ env.PATH }}
-      - uses: cliffano/command-docker-action@v1.2.0
+      - uses: cliffano/command-docker-action@v1.3.0
         with:
           command: 'make ci'
           image: cliffano/studio:2.5.0
           shell: bash
-          env_file: '/tmp/.env'
+          extra_path: /usr/local/go/bin:/usr/local/maven/bin:/usr/local/node/bin:/usr/local/openjdk-jdk/bin:/root/.cargo/bin:/root/go/bin
+          env:
+            GITHUB_ACTIONS: ${{ env.GITHUB_ACTIONS }}
       - run: npm install -g gh-pages
       - run: CACHE_DIR=/tmp gh-pages --dist doc/ --user "pakkunbot <blah+pakkun@cliffano.com>" --repo "https://cliffano:${{ secrets.OAPICF_GITHUB_TOKEN }}@github.com/oapicf/openapi-okta-ip-ranges.git"
