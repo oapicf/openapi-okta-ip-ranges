@@ -1,0 +1,8 @@
+.openapi-generator-ignore
+pom.xml
+src/gen/java/org/openapitools/api/IpRangesJsonApi.java
+src/gen/java/org/openapitools/api/IpRangesJsonApiService.java
+src/gen/java/org/openapitools/model/IpRangesJsonGet200ResponseValue.java
+src/main/java/org/openapitools/api/RestApplication.java
+src/main/java/org/openapitools/api/impl/IpRangesJsonApiServiceImpl.java
+src/main/webapp/WEB-INF/beans.xml

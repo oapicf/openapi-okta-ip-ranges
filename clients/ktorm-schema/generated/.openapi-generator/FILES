@@ -1,0 +1,7 @@
+.openapi-generator-ignore
+README.md
+build.gradle
+docs/IpRangesJsonGet200ResponseValue.md
+ktorm_schema.sql
+settings.gradle
+src/main/kotlin/org/openapitools/database/models/IpRangesJsonGet200ResponseValue.kt

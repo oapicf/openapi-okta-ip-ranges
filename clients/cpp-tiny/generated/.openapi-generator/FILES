@@ -1,0 +1,17 @@
+.openapi-generator-ignore
+README.md
+lib/Models/Helpers.cpp
+lib/Models/Helpers.h
+lib/Models/IpRangesJsonGet200ResponseValue.cpp
+lib/Models/IpRangesJsonGet200ResponseValue.h
+lib/TestFiles/IpRangesJsonGet200ResponseValueTest.cpp
+lib/service/DefaultApi.cpp
+lib/service/DefaultApi.h
+lib/service/Response.h
+lib/service/Service.cpp
+lib/service/Service.h
+platformio.ini
+pre_compiling_bourne.py
+root.cert
+src/main.cpp
+test/RunTests.cpp
