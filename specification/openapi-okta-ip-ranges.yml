@@ -5,6 +5,7 @@ info:
   description: OpenAPI specification and a set of generated API clients for Okta IP Ranges
   license:
     name: MPL-2.0
+    identifier: MPL-2.0 # Temporary until https://github.com/OpenAPITools/openapi-generator/issues/15216 is fixed
   contact:
     name: OpenAPI Clients Factory
     url: https://github.com/oapicf/openapi-okta-ip-ranges
