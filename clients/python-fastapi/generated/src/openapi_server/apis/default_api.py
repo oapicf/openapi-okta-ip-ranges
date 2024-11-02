@@ -14,6 +14,7 @@ from fastapi import (  # noqa: F401
     Depends,
     Form,
     Header,
+    HTTPException,
     Path,
     Query,
     Response,
@@ -44,4 +45,6 @@ for _, name, _ in pkgutil.iter_modules(ns_pkg.__path__, ns_pkg.__name__ + "."):
 async def ip_ranges_json_get(
 ) -> Dict[str, IpRangesJsonGet200ResponseValue]:
     """Returns IP ranges organized by regional cell names."""
-    return BaseDefaultApi.subclasses[0]().ip_ranges_json_get()
+    if not BaseDefaultApi.subclasses:
+        raise HTTPException(status_code=500, detail="Not implemented")
+    return await BaseDefaultApi.subclasses[0]().ip_ranges_json_get()

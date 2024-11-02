@@ -30,7 +30,7 @@ import javax.validation.Valid;
 
 
 @io.swagger.annotations.Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2024-10-26T04:03:07.497615236Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2024-11-02T00:27:44.200285935Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonApi  {
    private final IpRangesJsonApiService delegate;
 
@@ -41,7 +41,7 @@ public class IpRangesJsonApi  {
          String implClass = servletContext.getInitParameter("IpRangesJsonApi.implementation");
          if (implClass != null && !"".equals(implClass.trim())) {
             try {
-               delegate = (IpRangesJsonApiService) Class.forName(implClass).newInstance();
+               delegate = (IpRangesJsonApiService) Class.forName(implClass).getDeclaredConstructor().newInstance();
             } catch (Exception e) {
                throw new RuntimeException(e);
             }

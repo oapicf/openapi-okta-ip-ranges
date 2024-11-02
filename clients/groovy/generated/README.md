@@ -6,8 +6,8 @@ This Groovy package, using the [http-builder-ng library](https://http-builder-ng
 
 - API version: 0.9.0-pre.0
 - Package version: 0.9.0-pre.0
-- Build date: 2024-10-26T04:00:43.982234522Z[Etc/UTC]
-- Generator version: 7.6.0
+- Build date: 2024-11-02T00:26:33.815373594Z[Etc/UTC]
+- Generator version: 7.9.0
 - Build package: org.openapitools.codegen.languages.GroovyClientCodegen
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)
 

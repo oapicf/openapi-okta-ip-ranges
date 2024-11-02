@@ -18,7 +18,7 @@ your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:open_api_okta_ip_ranges, "~> 0.9.0-pre.0"}]
+  [{:open_api_okta_ip_ranges, "~> 1.0.0"}]
 end
 ```
 

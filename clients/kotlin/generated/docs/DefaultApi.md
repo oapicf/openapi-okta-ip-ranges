@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://s3.amazonaws.com/okta-ip-ranges*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**ipRangesJsonGet**](DefaultApi.md#ipRangesJsonGet) | **GET** /ip_ranges.json | Retrieve Okta IP ranges
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**ipRangesJsonGet**](DefaultApi.md#ipRangesJsonGet) | **GET** /ip_ranges.json | Retrieve Okta IP ranges |
 
 
 <a id="ipRangesJsonGet"></a>

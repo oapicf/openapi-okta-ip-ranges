@@ -12,27 +12,6 @@
 #' @format An \code{R6Class} generator object
 #' @field api_client Handles the client-server communication.
 #'
-#' @section Methods:
-#' \describe{
-#' \strong{ IpRangesJsonGet } \emph{ Retrieve Okta IP ranges }
-#' Returns IP ranges organized by regional cell names.
-#'
-#' \itemize{
-#' \item \emph{ @returnType } named list( \link{_ip_ranges_json_get_200_response_value} ) \cr
-#'
-#'
-#' \item status code : 200 | A JSON object of regional cells with IP ranges.
-#'
-#' \item return type : map(IpRangesJsonGet200ResponseValue)
-#' \item response headers :
-#'
-#' \tabular{ll}{
-#' }
-#' }
-#'
-#' }
-#'
-#'
 #' @examples
 #' \dontrun{
 #' ####################  IpRangesJsonGet  ####################
@@ -56,13 +35,11 @@ DefaultApi <- R6::R6Class(
   "DefaultApi",
   public = list(
     api_client = NULL,
-    #' Initialize a new DefaultApi.
-    #'
+
     #' @description
     #' Initialize a new DefaultApi.
     #'
     #' @param api_client An instance of API client.
-    #' @export
     initialize = function(api_client) {
       if (!missing(api_client)) {
         self$api_client <- api_client
@@ -70,15 +47,14 @@ DefaultApi <- R6::R6Class(
         self$api_client <- ApiClient$new()
       }
     },
-    #' Retrieve Okta IP ranges
-    #'
+
     #' @description
     #' Retrieve Okta IP ranges
     #'
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
+    #'
     #' @return map(IpRangesJsonGet200ResponseValue)
-    #' @export
     IpRangesJsonGet = function(data_file = NULL, ...) {
       local_var_response <- self$IpRangesJsonGetWithHttpInfo(data_file = data_file, ...)
       if (local_var_response$status_code >= 200 && local_var_response$status_code <= 299) {
@@ -91,15 +67,14 @@ DefaultApi <- R6::R6Class(
         local_var_response
       }
     },
-    #' Retrieve Okta IP ranges
-    #'
+
     #' @description
     #' Retrieve Okta IP ranges
     #'
     #' @param data_file (optional) name of the data file to save the result
     #' @param ... Other optional arguments
+    #'
     #' @return API response (map(IpRangesJsonGet200ResponseValue)) with additional information such as HTTP status code, headers
-    #' @export
     IpRangesJsonGetWithHttpInfo = function(data_file = NULL, ...) {
       args <- list(...)
       query_params <- list()

@@ -12,8 +12,8 @@ server, you can easily generate a server stub.
 To see how to make this your own, look here: [README]((https://openapi-generator.tech))
 
 - API version: 0.9.0-pre.0
-- Build date: 2024-10-26T04:11:53.268112543Z[Etc/UTC]
-- Generator version: 7.6.0
+- Build date: 2024-11-02T00:31:21.747574200Z[Etc/UTC]
+- Generator version: 7.9.0
 
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)
 

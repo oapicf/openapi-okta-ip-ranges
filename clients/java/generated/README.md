@@ -2,8 +2,8 @@
 
 OpenAPI Okta IP Ranges
 - API version: 0.9.0-pre.0
-  - Build date: 2024-10-26T04:01:29.918861264Z[Etc/UTC]
-  - Generator version: 7.6.0
+  - Build date: 2024-11-02T00:26:54.797997150Z[Etc/UTC]
+  - Generator version: 7.9.0
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 
@@ -85,7 +85,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import org.openapitools.client.ApiClient;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.Configuration;
-import org.openapitools.client.models.*;
+import org.openapitools.client.model.*;
 import org.openapitools.client.api.DefaultApi;
 
 public class Example {

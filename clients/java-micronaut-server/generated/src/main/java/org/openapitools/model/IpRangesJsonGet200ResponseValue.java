@@ -34,7 +34,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
   IpRangesJsonGet200ResponseValue.JSON_PROPERTY_IP_RANGES
 })
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@Generated(value="org.openapitools.codegen.languages.JavaMicronautServerCodegen", date="2024-10-26T04:02:08.851152788Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@Generated(value="org.openapitools.codegen.languages.JavaMicronautServerCodegen", date="2024-11-02T00:27:14.244758543Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 @Introspected
 public class IpRangesJsonGet200ResponseValue {
     public static final String JSON_PROPERTY_IP_RANGES = "ip_ranges";
@@ -59,7 +59,7 @@ public class IpRangesJsonGet200ResponseValue {
     /**
      * Get ipRanges
      * @return ipRanges
-     **/
+     */
     @Nullable
     @Schema(name = "ip_ranges", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     @JsonProperty(JSON_PROPERTY_IP_RANGES)

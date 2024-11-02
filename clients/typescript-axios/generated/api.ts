@@ -111,7 +111,7 @@ export const DefaultApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        ipRangesJsonGet(options?: any): AxiosPromise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
+        ipRangesJsonGet(options?: RawAxiosRequestConfig): AxiosPromise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
             return localVarFp.ipRangesJsonGet(options).then((request) => request(axios, basePath));
         },
     };

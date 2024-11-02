@@ -59,7 +59,7 @@ public:
     QString getParamStyleDelimiter(const QString &style, const QString &name, bool isExplode);
 
 
-    void ipRangesJsonGet();
+    virtual void ipRangesJsonGet();
 
 
 private:
@@ -89,6 +89,7 @@ private:
 Q_SIGNALS:
 
     void ipRangesJsonGetSignal(QMap<QString, OAI_ip_ranges_json_get_200_response_value> summary);
+
 
     void ipRangesJsonGetSignalFull(OAIHttpRequestWorker *worker, QMap<QString, OAI_ip_ranges_json_get_200_response_value> summary);
 

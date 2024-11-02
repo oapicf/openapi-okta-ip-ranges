@@ -1,5 +1,9 @@
 ## @
 
+OpenAPI specification and a set of generated API clients for Okta IP Ranges
+
+The version of the OpenAPI document: 0.9.0-pre.0
+
 ### Building
 
 To install the required dependencies and to build the typescript sources run:

@@ -32,14 +32,12 @@ impl IpRangesJsonGet200ResponseValue {
 impl std::string::ToString for IpRangesJsonGet200ResponseValue {
     fn to_string(&self) -> String {
         let params: Vec<Option<String>> = vec![
-
             self.ip_ranges.as_ref().map(|ip_ranges| {
                 [
                     "ip_ranges".to_string(),
                     ip_ranges.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(","),
                 ].join(",")
             }),
-
         ];
 
         params.into_iter().flatten().collect::<Vec<_>>().join(",")
@@ -129,3 +127,48 @@ impl std::convert::TryFrom<hyper::header::HeaderValue> for header::IntoHeaderVal
     }
 }
 
+#[cfg(feature = "server")]
+impl std::convert::TryFrom<header::IntoHeaderValue<Vec<IpRangesJsonGet200ResponseValue>>> for hyper::header::HeaderValue {
+    type Error = String;
+
+    fn try_from(hdr_values: header::IntoHeaderValue<Vec<IpRangesJsonGet200ResponseValue>>) -> std::result::Result<Self, Self::Error> {
+        let hdr_values : Vec<String> = hdr_values.0.into_iter().map(|hdr_value| {
+            hdr_value.to_string()
+        }).collect();
+
+        match hyper::header::HeaderValue::from_str(&hdr_values.join(", ")) {
+           std::result::Result::Ok(hdr_value) => std::result::Result::Ok(hdr_value),
+           std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to convert {:?} into a header - {}",
+               hdr_values, e))
+        }
+    }
+}
+
+#[cfg(feature = "server")]
+impl std::convert::TryFrom<hyper::header::HeaderValue> for header::IntoHeaderValue<Vec<IpRangesJsonGet200ResponseValue>> {
+    type Error = String;
+
+    fn try_from(hdr_values: hyper::header::HeaderValue) -> std::result::Result<Self, Self::Error> {
+        match hdr_values.to_str() {
+            std::result::Result::Ok(hdr_values) => {
+                let hdr_values : std::vec::Vec<IpRangesJsonGet200ResponseValue> = hdr_values
+                .split(',')
+                .filter_map(|hdr_value| match hdr_value.trim() {
+                    "" => std::option::Option::None,
+                    hdr_value => std::option::Option::Some({
+                        match <IpRangesJsonGet200ResponseValue as std::str::FromStr>::from_str(hdr_value) {
+                            std::result::Result::Ok(value) => std::result::Result::Ok(value),
+                            std::result::Result::Err(err) => std::result::Result::Err(
+                                format!("Unable to convert header value '{}' into IpRangesJsonGet200ResponseValue - {}",
+                                    hdr_value, err))
+                        }
+                    })
+                }).collect::<std::result::Result<std::vec::Vec<_>, String>>()?;
+
+                std::result::Result::Ok(header::IntoHeaderValue(hdr_values))
+            },
+            std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to parse header: {:?} as a string - {}",
+                hdr_values, e)),
+        }
+    }
+}

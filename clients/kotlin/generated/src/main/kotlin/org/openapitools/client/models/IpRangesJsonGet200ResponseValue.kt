@@ -31,5 +31,8 @@ data class IpRangesJsonGet200ResponseValue (
     @Json(name = "ip_ranges")
     val ipRanges: kotlin.collections.List<kotlin.String>? = null
 
-)
+) {
+
+
+}
 

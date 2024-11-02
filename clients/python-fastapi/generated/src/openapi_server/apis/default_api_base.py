@@ -11,7 +11,7 @@ class BaseDefaultApi:
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)
         BaseDefaultApi.subclasses = BaseDefaultApi.subclasses + (cls,)
-    def ip_ranges_json_get(
+    async def ip_ranges_json_get(
         self,
     ) -> Dict[str, IpRangesJsonGet200ResponseValue]:
         """Returns IP ranges organized by regional cell names."""

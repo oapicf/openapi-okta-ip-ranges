@@ -67,7 +67,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Dictionary&lt;string, IpRangesJsonGet200ResponseValue&gt;</returns>
-        System.Threading.Tasks.Task<Dictionary<string, IpRangesJsonGet200ResponseValue>> IpRangesJsonGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Dictionary<string, IpRangesJsonGet200ResponseValue>> IpRangesJsonGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// Retrieve Okta IP ranges
@@ -79,7 +79,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, IpRangesJsonGet200ResponseValue&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>>> IpRangesJsonGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>>> IpRangesJsonGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -268,7 +268,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Dictionary&lt;string, IpRangesJsonGet200ResponseValue&gt;</returns>
-        public async System.Threading.Tasks.Task<Dictionary<string, IpRangesJsonGet200ResponseValue>> IpRangesJsonGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Dictionary<string, IpRangesJsonGet200ResponseValue>> IpRangesJsonGetAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             Org.OpenAPITools.Client.ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>> localVarResponse = await IpRangesJsonGetWithHttpInfoAsync(operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -281,7 +281,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Dictionary&lt;string, IpRangesJsonGet200ResponseValue&gt;)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>>> IpRangesJsonGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>>> IpRangesJsonGetWithHttpInfoAsync(int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();

@@ -17,7 +17,7 @@ import java.io.InputStream;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2024-10-26T04:02:13.842322479Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2024-11-02T00:27:16.886295708Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public abstract class IpRangesJsonApiService {
     public abstract Response ipRangesJsonGet() throws NotFoundException;
 }

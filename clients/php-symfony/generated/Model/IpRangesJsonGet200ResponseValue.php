@@ -48,11 +48,11 @@ class IpRangesJsonGet200ResponseValue
         /**
      * @var string[]|null
      * @SerializedName("ip_ranges")
-     * @Assert\All({
-     *   @Assert\Type("string")
-     * })
      * @Type("array<string>")
-     */
+    */
+    #[Assert\All([
+        new Assert\Type("string"),
+    ])]
     protected ?array $ipRanges = null;
 
     /**
@@ -76,21 +76,22 @@ class IpRangesJsonGet200ResponseValue
         return $this->ipRanges;
     }
 
-
-
     /**
-     * Sets ipRanges.
-     *
-     * @param string[]|null $ipRanges
-     *
-     * @return $this
-     */
+    * Sets ipRanges.
+    *
+    * @param string[]|null $ipRanges
+    *
+    * @return $this
+    */
     public function setIpRanges(?array $ipRanges = null): self
     {
         $this->ipRanges = $ipRanges;
 
         return $this;
     }
+
+
+
 }
 
 

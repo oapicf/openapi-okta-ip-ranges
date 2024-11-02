@@ -14,6 +14,7 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.model.IpRangesJsonGet200ResponseValue;
+import java.util.Map;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

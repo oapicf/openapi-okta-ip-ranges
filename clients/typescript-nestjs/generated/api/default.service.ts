@@ -11,7 +11,7 @@
  */
 /* tslint:disable:no-unused-variable member-ordering */
 
-import { Inject, Injectable, Optional } from '@nestjs/common';
+import { Injectable, Optional } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { AxiosResponse } from 'axios';
 import { Observable, from, of, switchMap } from 'rxjs';
@@ -49,7 +49,6 @@ export class DefaultService {
      */
     public ipRangesJsonGet(): Observable<AxiosResponse<{ [key: string]: IpRangesJsonGet200ResponseValue; }>>;
     public ipRangesJsonGet(): Observable<any> {
-
         let headers = {...this.defaultHeaders};
 
         let accessTokenObservable: Observable<any> = of(null);

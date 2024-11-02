@@ -48,10 +48,15 @@ export function IpRangesJsonGet200ResponseValueFromJSONTyped(json: any, ignoreDi
     };
 }
 
-export function IpRangesJsonGet200ResponseValueToJSON(value?: IpRangesJsonGet200ResponseValue | null): any {
+  export function IpRangesJsonGet200ResponseValueToJSON(json: any): IpRangesJsonGet200ResponseValue {
+      return IpRangesJsonGet200ResponseValueToJSONTyped(json, false);
+  }
+
+  export function IpRangesJsonGet200ResponseValueToJSONTyped(value?: IpRangesJsonGet200ResponseValue | null, ignoreDiscriminator: boolean = false): any {
     if (value == null) {
         return value;
     }
+
     return {
         
         'ip_ranges': value['ipRanges'],

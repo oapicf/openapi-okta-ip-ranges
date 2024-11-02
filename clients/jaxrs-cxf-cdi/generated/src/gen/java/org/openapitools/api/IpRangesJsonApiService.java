@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2024-10-26T04:03:01.847025957Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2024-11-02T00:27:40.664228945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public interface IpRangesJsonApiService {
       public Response ipRangesJsonGet(SecurityContext securityContext);
 }

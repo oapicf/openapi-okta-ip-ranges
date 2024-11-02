@@ -39,7 +39,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -51,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Object containing IP ranges for a specific regional cell
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-10-26T04:01:29.918861264Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-02T00:26:54.797997150Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonGet200ResponseValue {
   public static final String SERIALIZED_NAME_IP_RANGES = "ip_ranges";
   @SerializedName(SERIALIZED_NAME_IP_RANGES)
@@ -73,10 +72,10 @@ public class IpRangesJsonGet200ResponseValue {
     return this;
   }
 
-   /**
+  /**
    * Get ipRanges
    * @return ipRanges
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getIpRanges() {
     return ipRanges;
@@ -138,12 +137,12 @@ public class IpRangesJsonGet200ResponseValue {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to IpRangesJsonGet200ResponseValue
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to IpRangesJsonGet200ResponseValue
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!IpRangesJsonGet200ResponseValue.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -194,22 +193,22 @@ public class IpRangesJsonGet200ResponseValue {
     }
   }
 
- /**
-  * Create an instance of IpRangesJsonGet200ResponseValue given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of IpRangesJsonGet200ResponseValue
-  * @throws IOException if the JSON string is invalid with respect to IpRangesJsonGet200ResponseValue
-  */
+  /**
+   * Create an instance of IpRangesJsonGet200ResponseValue given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of IpRangesJsonGet200ResponseValue
+   * @throws IOException if the JSON string is invalid with respect to IpRangesJsonGet200ResponseValue
+   */
   public static IpRangesJsonGet200ResponseValue fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, IpRangesJsonGet200ResponseValue.class);
   }
 
- /**
-  * Convert an instance of IpRangesJsonGet200ResponseValue to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of IpRangesJsonGet200ResponseValue to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

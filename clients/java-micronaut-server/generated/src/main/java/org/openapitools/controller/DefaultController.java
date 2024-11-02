@@ -37,7 +37,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
-@Generated(value="org.openapitools.codegen.languages.JavaMicronautServerCodegen", date="2024-10-26T04:02:08.851152788Z[Etc/UTC]", comments = "Generator version: 7.6.0")
+@Generated(value="org.openapitools.codegen.languages.JavaMicronautServerCodegen", date="2024-11-02T00:27:14.244758543Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 @Controller
 @Tag(name = "Default", description = "The Default API")
 public class DefaultController {

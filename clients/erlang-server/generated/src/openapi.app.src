@@ -1,19 +1,11 @@
-{application, openapi, [
-    {description, "OpenAPI specification and a set of generated API clients for Okta IP Ranges"},
-    {vsn, "1.0.0"},
-    {registered, []},
-    {applications, [
-        kernel,
-        stdlib,
-        ssl,
-        inets,
-        jsx,
-        jesse,
-        cowboy
-    ]},
-    {env, [
-    ]},
-    {modules, []},
-    {licenses, ["MPL-2.0"]},
-    {links, ["https://github.com/oapicf/openapi-okta-ip-ranges"]}
-]}.
+{application,
+ openapi,
+ [{description,
+   "OpenAPI specification and a set of generated API clients for Okta IP Ranges"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [kernel, stdlib, public_key, ssl, inets, ranch, cowboy]},
+  {env, []},
+  {modules, []},
+  {licenses, ["MPL-2.0"]},
+  {links, ["https://github.com/oapicf/openapi-okta-ip-ranges"]}]}.
