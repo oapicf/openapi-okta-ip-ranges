@@ -1,5 +1,5 @@
 spec_uri: specification/openapi-okta-ip-ranges.yml
-version: 1.0.0
+version: 1.0.1-pre.0
 contact:
   name: OpenAPI Okta IP Ranges
   url: https://github.com/oapicf/openapi-okta-ip-ranges
