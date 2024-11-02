@@ -1,5 +1,5 @@
 spec_uri: specification/openapi-okta-ip-ranges.yml
-version: 0.9.0-pre.0
+version: 0.10.0
 contact:
   name: OpenAPI Okta IP Ranges
   url: https://github.com/oapicf/openapi-okta-ip-ranges
@@ -10,4 +10,5 @@ scm:
 base_dir:
   github_actions: /home/runner/work/openapi-okta-ip-ranges/openapi-okta-ip-ranges/
   local: /Users/cliffano/dev/workspace-studio/openapi-okta-ip-ranges
-  custom: /home/runner/work/generator-openapi-generator/generator-openapi-generator/stage/openapi-okta-ip-ranges/
+  custom: >-
+    /home/runner/work/generator-openapi-generator/generator-openapi-generator/stage/openapi-okta-ip-ranges/

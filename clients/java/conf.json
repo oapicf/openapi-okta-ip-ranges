@@ -1,4 +1,5 @@
 {
   "gitUserId": "oapicf",
-  "gitRepoId": "openapi-okta-ip-ranges"
+  "gitRepoId": "openapi-okta-ip-ranges",
+  "artifactVersion": "0.10.0"
 }
