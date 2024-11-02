@@ -47,9 +47,9 @@ Protected Class DefaultApi
 		  If HTTPStatus > 199 and HTTPStatus < 300 then
 		    If contentType.LeftB(16) = "application/json" then
 		      
-			  outData = New Dictionary
+			  
 			  Try
-		        outData = ParseJSON(Content)
+		        outData = ParseJSON(Content)outData = ParseJSON(Content)
 
 		      Catch e As JSONException
 		        error.Message = error.Message + " with JSON parse exception: " + e.Message

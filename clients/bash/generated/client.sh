@@ -466,7 +466,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}OpenAPI Okta IP Ranges command line client (API version 0.9.0-pre.0)${OFF}
+${BOLD}${WHITE}OpenAPI Okta IP Ranges command line client (API version 0.10.1-pre.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -527,7 +527,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://s3.amazonaws.com')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}OpenAPI Okta IP Ranges command line client (API version 0.9.0-pre.0)${OFF}"
+    echo -e "${BOLD}${WHITE}OpenAPI Okta IP Ranges command line client (API version 0.10.1-pre.0)${OFF}"
     echo ""
     echo -e "License: MPL-2.0"
     echo -e "Contact: blah+oapicf@cliffano.com"
@@ -547,7 +547,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}OpenAPI Okta IP Ranges command line client (API version 0.9.0-pre.0)${OFF}"
+    echo -e "${BOLD}OpenAPI Okta IP Ranges command line client (API version 0.10.1-pre.0)${OFF}"
     echo ""
 }
 

@@ -3,7 +3,7 @@ OpenAPI Okta IP Ranges
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 
-API version: 0.9.0-pre.0
+API version: 0.10.1-pre.0
 Contact: blah+oapicf@cliffano.com
 */
 
@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer( "%5B", "[", "%5D", "]" )
 )
 
-// APIClient manages communication with the OpenAPI Okta IP Ranges API v0.9.0-pre.0
+// APIClient manages communication with the OpenAPI Okta IP Ranges API v0.10.1-pre.0
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration

@@ -14,7 +14,7 @@ use crate::server::Authorization;
 type ServiceError = Box<dyn Error + Send + Sync + 'static>;
 
 pub const BASE_PATH: &str = "/okta-ip-ranges";
-pub const API_VERSION: &str = "0.9.0-pre.0";
+pub const API_VERSION: &str = "0.10.1-pre.0";
 
 mod auth;
 pub use auth::{AuthenticationApi, Claims};

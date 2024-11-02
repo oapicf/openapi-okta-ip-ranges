@@ -79,7 +79,7 @@ public class DefaultControllerTest {
         // given
         String uri = UriTemplate.of("/ip_ranges.json").expand(new HashMap<>());
         MutableHttpRequest<?> request = HttpRequest.GET(uri)
-            .accept("[Ljava.lang.String;@304b9f1a");
+            .accept("[Ljava.lang.String;@72be135f");
 
         // when
         HttpResponse<?> response = client.toBlocking().exchange(request, Argument.of(Map.class, String.class, IpRangesJsonGet200ResponseValue.class));

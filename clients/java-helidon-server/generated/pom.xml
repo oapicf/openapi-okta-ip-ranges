@@ -11,7 +11,7 @@
     </parent>
     <groupId>org.openapitools</groupId>
     <artifactId>openapi-java-server</artifactId>
-    <version>0.9.0-pre.0</version>
+    <version>0.10.1-pre.0</version>
     <name>openapi-java-server</name>
     <description>OpenAPI specification and a set of generated API clients for Okta IP Ranges</description>
 

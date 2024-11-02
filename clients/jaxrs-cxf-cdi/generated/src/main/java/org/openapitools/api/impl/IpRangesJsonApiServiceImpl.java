@@ -20,7 +20,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
 @RequestScoped
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2024-11-02T00:27:40.664228945Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2024-11-02T04:09:40.987515335Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonApiServiceImpl implements IpRangesJsonApiService {
       @Override
       public Response ipRangesJsonGet(SecurityContext securityContext) {

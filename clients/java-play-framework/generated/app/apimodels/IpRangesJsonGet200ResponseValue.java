@@ -13,7 +13,7 @@ import javax.validation.Valid;
 /**
  * Object containing IP ranges for a specific regional cell
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2024-11-02T00:27:21.749739735Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2024-11-02T04:09:17.303980483Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
 public class IpRangesJsonGet200ResponseValue   {
   @JsonProperty("ip_ranges")

@@ -16,7 +16,7 @@ import javax.validation.Valid;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2024-11-02T00:27:49.238734993Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2024-11-02T04:09:51.920006429Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonApiServiceImpl implements IpRangesJsonApi {
       public Response ipRangesJsonGet(SecurityContext securityContext) {
       // do some magic!

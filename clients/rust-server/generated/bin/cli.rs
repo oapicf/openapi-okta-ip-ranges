@@ -21,7 +21,7 @@ type ClientContext = swagger::make_context_ty!(
 #[derive(StructOpt, Debug)]
 #[structopt(
     name = "OpenAPI Okta IP Ranges",
-    version = "0.9.0-pre.0",
+    version = "0.10.1-pre.0",
     about = "CLI access to OpenAPI Okta IP Ranges"
 )]
 struct Cli {

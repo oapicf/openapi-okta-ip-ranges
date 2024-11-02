@@ -28,7 +28,7 @@ import javax.validation.Valid;
 
 
 @io.swagger.annotations.Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2024-11-02T00:27:46.481136159Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2024-11-02T04:09:48.118232375Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonApi  {
 
     @Inject IpRangesJsonApiService service;

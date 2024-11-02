@@ -1,6 +1,6 @@
 # Documentation for OpenAPI Okta IP Ranges
 
-- API version: 0.9.0-pre.0
+- API version: 0.10.1-pre.0
 
 - Generator version: 7.9.0
 

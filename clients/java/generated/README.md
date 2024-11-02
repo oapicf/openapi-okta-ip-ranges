@@ -1,8 +1,8 @@
 # openapi-java-client
 
 OpenAPI Okta IP Ranges
-- API version: 0.9.0-pre.0
-  - Build date: 2024-11-02T00:26:54.797997150Z[Etc/UTC]
+- API version: 0.10.1-pre.0
+  - Build date: 2024-11-02T04:08:42.485583682Z[Etc/UTC]
   - Generator version: 7.9.0
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
@@ -42,7 +42,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.openapitools</groupId>
   <artifactId>openapi-java-client</artifactId>
-  <version>0.9.0-pre.0</version>
+  <version>0.10.1-pre.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -58,7 +58,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:0.9.0-pre.0"
+     implementation "org.openapitools:openapi-java-client:0.10.1-pre.0"
   }
 ```
 
@@ -72,7 +72,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-0.9.0-pre.0.jar`
+* `target/openapi-java-client-0.10.1-pre.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started

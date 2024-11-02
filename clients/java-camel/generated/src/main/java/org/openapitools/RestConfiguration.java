@@ -20,6 +20,6 @@ public class RestConfiguration extends RouteBuilder {
             .bindingMode(RestBindingMode.auto)
             .clientRequestValidation(false)
             .apiProperty("api.title", "OpenAPI Okta IP Ranges")
-            .apiProperty("api.version", "0.9.0-pre.0");
+            .apiProperty("api.version", "0.10.1-pre.0");
     }
 }

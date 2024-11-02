@@ -24,7 +24,7 @@ import javax.annotation.Generated;
 
 @Schema(name = "_ip_ranges_json_get_200_response_value", description = "Object containing IP ranges for a specific regional cell")
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@Generated(value = "org.openapitools.codegen.languages.JavaCamelServerCodegen", date = "2024-11-02T00:27:32.246197496Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@Generated(value = "org.openapitools.codegen.languages.JavaCamelServerCodegen", date = "2024-11-02T04:09:31.070743432Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class IpRangesJsonGet200ResponseValue {
 
   @Valid

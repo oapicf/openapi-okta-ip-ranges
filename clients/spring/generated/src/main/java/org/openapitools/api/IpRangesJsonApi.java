@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2024-11-02T00:30:24.416666975Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2024-11-02T04:13:12.168633072Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 @Validated
 @Tag(name = "ip_ranges.json", description = "the ip_ranges.json API")
 public interface IpRangesJsonApi {

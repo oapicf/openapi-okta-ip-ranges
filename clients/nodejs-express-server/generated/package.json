@@ -1,6 +1,6 @@
 {
   "name":  "openapi-okta-ip-ranges",
-  "version": "0.9.0-pre.0",
+  "version": "0.10.1-pre.0",
   "description": "OpenAPI specification and a set of generated API clients for Okta IP Ranges",
   "main": "index.js",
   "scripts": {

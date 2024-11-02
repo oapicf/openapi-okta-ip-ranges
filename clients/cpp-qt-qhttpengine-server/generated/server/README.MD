@@ -9,7 +9,7 @@ To see how to make this your own, look here:
 
 [README]((https://openapi-generator.tech))
 
-- API version: 0.9.0-pre.0
+- API version: 0.10.1-pre.0
 - Generator version: 7.9.0
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)
 

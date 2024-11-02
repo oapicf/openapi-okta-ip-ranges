@@ -5,7 +5,7 @@
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 
 * API basepath : [https://s3.amazonaws.com/okta-ip-ranges](https://s3.amazonaws.com/okta-ip-ranges)
-* Version : 0.9.0-pre.0
+* Version : 0.10.1-pre.0
 
 ## Documentation for API Endpoints
 
