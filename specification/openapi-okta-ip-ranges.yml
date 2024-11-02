@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 0.10.0
+  version: 0.10.1-pre.0
   title: OpenAPI Okta IP Ranges
   description: OpenAPI specification and a set of generated API clients for Okta IP Ranges
   license:
