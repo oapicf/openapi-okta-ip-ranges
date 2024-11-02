@@ -22,7 +22,7 @@ Version matrix
 
 | OpenAPI Okta IP Ranges Version | OpenAPI Version | OpenAPI Generator Version |
 |--------------------------------|-----------------|---------------------------|
-| Unreleased | 3.1.0 | 7.9.0 |
+| 1.0.0 | 3.1.0 | 7.9.0 |
 | 0.10.0 | 3.0.0 | 7.9.0 |
 
 Installation
@@ -34,7 +34,7 @@ Or you can use the published packages like below:
 
 Install JavaScript client:
 
-    npm install openapi-okta-ip-ranges
+    npm install openapi_okta_ip_ranges
 
 Install Python client:
 
