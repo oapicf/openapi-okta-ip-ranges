@@ -13,8 +13,8 @@ Published packages
 
 | Language | Package | Status | Documentation |
 |----------|---------|--------|---------------|
-| JavaScript | [openapi-okta-ip-ranges]((https://www.npmjs.com/package/openapi-okta-ip-ranges)) | [![Published Version](https://img.shields.io/npm/v/openapi-okta-ip-ranges.svg)](https://www.npmjs.com/package/openapi-okta-ip-ranges) | [README](https://github.com/oapicf/openapi-okta-ip-ranges/blob/main/clients/javascript/generated/README.md) |
-| Python | [openapi-okta-ip-ranges]((https://pypi.python.org/pypi/openapi-okta-ip-ranges)) | [![Published Version](https://img.shields.io/pypi/v/openapi-okta-ip-ranges.svg)](https://pypi.python.org/pypi/openapi-okta-ip-ranges) | [README](https://github.com/oapicf/openapi-okta-ip-ranges/blob/main/clients/python/generated/README.md) |
+| JavaScript | [openapi_okta_ip_ranges]((https://www.npmjs.com/package/openapi_okta_ip_ranges)) | [![Published Version](https://img.shields.io/npm/v/openapi_okta_ip_ranges.svg)](https://www.npmjs.com/package/openapi_okta_ip_ranges) | [README](https://github.com/oapicf/openapi-okta-ip-ranges/blob/main/clients/javascript/generated/README.md) |
+| Python | [openapioktaipranges]((https://pypi.python.org/pypi/openapioktaipranges)) | [![Published Version](https://img.shields.io/pypi/v/openapioktaipranges.svg)](https://pypi.python.org/pypi/openapioktaipranges) | [README](https://github.com/oapicf/openapi-okta-ip-ranges/blob/main/clients/python/generated/README.md) |
 | Ruby | [openapi_okta_ip_ranges]((https://rubygems.org/gems/openapi_okta_ip_ranges)) | [![Published Version](https://img.shields.io/gem/v/openapi_okta_ip_ranges.svg)](https://rubygems.org/gems/openapi_okta_ip_ranges) | [README](https://github.com/oapicf/openapi-okta-ip-ranges/blob/main/clients/ruby/generated/README.md) |
 
 Version matrix
