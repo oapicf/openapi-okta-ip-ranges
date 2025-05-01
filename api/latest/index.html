@@ -3,16 +3,17 @@
 <head>
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
-    <title>Azure IP Ranges and Service Tags - Public Cloud</title>
+    <title></title>
                                                          </head>
 <body>
 <div class="container">
-    <h1>Azure IP Ranges and Service Tags - Public Cloud</h1>
+    <h1></h1>
     <p class="sw-info">
         
-        Version: <span class="sw-info-version">0.10.1-pre.0</span>
+        Version: <span class="sw-info-version">1.0.1-pre.0</span>
     </p>
-    <p></p>
+    <p><p>SDK for Minecraft versions info</p>
+    </p>
     
     
     <div id="sw-schemes" class="sw-default-value">
@@ -32,13 +33,25 @@
             <tbody>
                     <tr>
                             <td class="swagger--summary-path" rowspan="1">
-                                <a href="#path--ServiceTags_Public_-version-.json">/ServiceTags_Public_{version}.json</a>
+                                <a href="#path--mc-game-version_manifest.json">/mc/game/version_manifest.json</a>
                             </td>
                         <td>
-                            <a href="#operation--ServiceTags_Public_-version-.json-get">GET</a>
+                            <a href="#operation--mc-game-version_manifest.json-get">GET</a>
                         </td>
                         <td>
-                            <p>Get Azure IP Ranges and Service Tags - Public Cloud</p>
+                            <p>Get Minecraft version manifest</p>
+        
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class="swagger--summary-path" rowspan="1">
+                                <a href="#path--v1-packages--packageId---versionId-.json">/v1/packages/{packageId}/{versionId}.json</a>
+                            </td>
+                        <td>
+                            <a href="#operation--v1-packages--packageId---versionId-.json-get">GET</a>
+                        </td>
+                        <td>
+                            <p>Get Minecraft version package info</p>
         
                         </td>
                     </tr>
@@ -50,16 +63,53 @@
     <h2>Paths</h2>
     
         
-        <span id="path--ServiceTags_Public_-version-.json"></span>
-            <div id="operation--ServiceTags_Public_-version-.json-get" class="swagger--panel-operation-get panel">
+        <span id="path--mc-game-version_manifest.json"></span>
+            <div id="operation--mc-game-version_manifest.json-get" class="swagger--panel-operation-get panel">
                 <div class="panel-heading">
-                    <div class="operation-summary">Get Azure IP Ranges and Service Tags - Public Cloud</div>
-                    <h3 class="panel-title"><span class="operation-name">GET</span> <strong>/ServiceTags_Public_{version}.json</strong></h3>
+                    <div class="operation-summary">Get Minecraft version manifest</div>
+                    <h3 class="panel-title"><span class="operation-name">GET</span> <strong>/mc/game/version_manifest.json</strong></h3>
                 </div>
                 <div class="panel-body">
                     <section class="sw-operation-description">
-                        <p>Retrieve details about Azure IP Ranges and Service Tags - Public Cloud.</p>
+                        
+                    </section>
             
+                    
+                    
+                        <section class="sw-responses">
+                    
+                            <dl>
+                                    <dt class="sw-response-200">
+                                        200 OK
+                                    
+                                    </dt>
+                                    <dd class="sw-response-200">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>A list of Minecraft versions with the latest and snapshot releases</p>
+                                            
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 sw-response-model">
+                                            </div>
+                                            
+                                            </div>                </dd>
+                            </dl>
+                        </section>
+                </div>
+            </div>
+        
+        <span id="path--v1-packages--packageId---versionId-.json"></span>
+            <div id="operation--v1-packages--packageId---versionId-.json-get" class="swagger--panel-operation-get panel">
+                <div class="panel-heading">
+                    <div class="operation-summary">Get Minecraft version package info</div>
+                    <h3 class="panel-title"><span class="operation-name">GET</span> <strong>/v1/packages/{packageId}/{versionId}.json</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <section class="sw-operation-description">
+                        
                     </section>
             
                     
@@ -77,10 +127,24 @@
                                 <tbody>
                                         <tr>
                                             <td>
-                                                version
+                                                packageId
                                             </td>
-                                            <td><p>The version of the JSON file to be retrieved in the format YYYYMMDD, e.g. 20240506</p>
-                                        </td>
+                                            <td></td>
+                                            <td>path</td>
+                                            <td>
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                            </td>
+                                            <td>
+                                                    <span class="json-property-required"></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                versionId
+                                            </td>
+                                            <td></td>
                                             <td>path</td>
                                             <td>
                                         <span class="json-property-type">object</span>
@@ -105,7 +169,7 @@
                                     <dd class="sw-response-200">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <p>Successful response</p>
+                                                    <p>Get package version details</p>
                                             
                                                 </div>
                                             </div>
