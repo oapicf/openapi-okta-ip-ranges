@@ -4,9 +4,9 @@ from openapioktaipranges.models.ip_ranges_json_get200_response_value import IpRa
 from openapioktaipranges.rest import ApiException
 from pprint import pprint
 
-class TestGoogle(unittest.TestCase):
+class TestGet(unittest.TestCase):
 
-    def test_search_with_query(self):
+    def test_retrieve_okta_ip_ranges(self):
 
         configuration = openapioktaipranges.Configuration(
             host = "https://s3.amazonaws.com/okta-ip-ranges"
