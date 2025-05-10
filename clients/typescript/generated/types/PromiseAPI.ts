@@ -1,5 +1,6 @@
 import { ResponseContext, RequestContext, HttpFile, HttpInfo } from '../http/http';
-import { Configuration} from '../configuration'
+import { Configuration, ConfigurationOptions, PromiseConfigurationOptions } from '../configuration'
+import { PromiseMiddleware, Middleware, PromiseMiddlewareWrapper } from '../middleware';
 
 import { IpRangesJsonGet200ResponseValue } from '../models/IpRangesJsonGet200ResponseValue';
 import { ObservableDefaultApi } from './ObservableAPI';
@@ -20,8 +21,20 @@ export class PromiseDefaultApi {
      * Returns IP ranges organized by regional cell names.
      * Retrieve Okta IP ranges
      */
-    public ipRangesJsonGetWithHttpInfo(_options?: Configuration): Promise<HttpInfo<{ [key: string]: IpRangesJsonGet200ResponseValue; }>> {
-        const result = this.api.ipRangesJsonGetWithHttpInfo(_options);
+    public ipRangesJsonGetWithHttpInfo(_options?: PromiseConfigurationOptions): Promise<HttpInfo<{ [key: string]: IpRangesJsonGet200ResponseValue; }>> {
+        let observableOptions: undefined | ConfigurationOptions
+        if (_options){
+	    observableOptions = {
+                baseServer: _options.baseServer,
+                httpApi: _options.httpApi,
+                middleware: _options.middleware?.map(
+                    m => new PromiseMiddlewareWrapper(m)
+		),
+		middlewareMergeStrategy: _options.middlewareMergeStrategy,
+                authMethods: _options.authMethods
+	    }
+	}
+        const result = this.api.ipRangesJsonGetWithHttpInfo(observableOptions);
         return result.toPromise();
     }
 
@@ -29,8 +42,20 @@ export class PromiseDefaultApi {
      * Returns IP ranges organized by regional cell names.
      * Retrieve Okta IP ranges
      */
-    public ipRangesJsonGet(_options?: Configuration): Promise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
-        const result = this.api.ipRangesJsonGet(_options);
+    public ipRangesJsonGet(_options?: PromiseConfigurationOptions): Promise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
+        let observableOptions: undefined | ConfigurationOptions
+        if (_options){
+	    observableOptions = {
+                baseServer: _options.baseServer,
+                httpApi: _options.httpApi,
+                middleware: _options.middleware?.map(
+                    m => new PromiseMiddlewareWrapper(m)
+		),
+		middlewareMergeStrategy: _options.middlewareMergeStrategy,
+                authMethods: _options.authMethods
+	    }
+	}
+        const result = this.api.ipRangesJsonGet(observableOptions);
         return result.toPromise();
     }
 

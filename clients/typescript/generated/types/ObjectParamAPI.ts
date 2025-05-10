@@ -1,5 +1,6 @@
 import { ResponseContext, RequestContext, HttpFile, HttpInfo } from '../http/http';
-import { Configuration} from '../configuration'
+import { Configuration, ConfigurationOptions } from '../configuration'
+import type { Middleware } from '../middleware';
 
 import { IpRangesJsonGet200ResponseValue } from '../models/IpRangesJsonGet200ResponseValue';
 
@@ -21,7 +22,7 @@ export class ObjectDefaultApi {
      * Retrieve Okta IP ranges
      * @param param the request object
      */
-    public ipRangesJsonGetWithHttpInfo(param: DefaultApiIpRangesJsonGetRequest = {}, options?: Configuration): Promise<HttpInfo<{ [key: string]: IpRangesJsonGet200ResponseValue; }>> {
+    public ipRangesJsonGetWithHttpInfo(param: DefaultApiIpRangesJsonGetRequest = {}, options?: ConfigurationOptions): Promise<HttpInfo<{ [key: string]: IpRangesJsonGet200ResponseValue; }>> {
         return this.api.ipRangesJsonGetWithHttpInfo( options).toPromise();
     }
 
@@ -30,7 +31,7 @@ export class ObjectDefaultApi {
      * Retrieve Okta IP ranges
      * @param param the request object
      */
-    public ipRangesJsonGet(param: DefaultApiIpRangesJsonGetRequest = {}, options?: Configuration): Promise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
+    public ipRangesJsonGet(param: DefaultApiIpRangesJsonGetRequest = {}, options?: ConfigurationOptions): Promise<{ [key: string]: IpRangesJsonGet200ResponseValue; }> {
         return this.api.ipRangesJsonGet( options).toPromise();
     }
 

@@ -21,9 +21,12 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
  **/
 @ApiModel(description = "Object containing IP ranges for a specific regional cell")
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2024-11-02T04:09:55.789165563Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2025-05-10T05:06:50.495088549Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class IpRangesJsonGet200ResponseValue   {
   private @Valid List<String> ipRanges = new ArrayList<>();
+
+  public IpRangesJsonGet200ResponseValue() {
+  }
 
   /**
    **/

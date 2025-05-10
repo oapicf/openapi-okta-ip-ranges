@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 README.md
 models/ip_ranges_json_get200_response_value.proto
 services/default_service.proto

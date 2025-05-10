@@ -3,7 +3,7 @@
  *
  * OpenAPI specification and a set of generated API clients for Okta IP Ranges
  *
- * OpenAPI document version: 0.10.1-pre.0
+ * OpenAPI document version: 1.0.1-pre.0
  * Maintained by: blah+oapicf@cliffano.com
  *
  * AUTO-GENERATED FILE, DO NOT MODIFY!
@@ -26,7 +26,7 @@ import java.util.List;
  */
 
 @ApiModel(description = "Object containing IP ranges for a specific regional cell")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2024-11-02T04:09:20.656377625Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaUndertowServerCodegen", date = "2025-05-10T05:06:37.822171175Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class IpRangesJsonGet200ResponseValue   {
   
   private List<String> ipRanges = new ArrayList<>();

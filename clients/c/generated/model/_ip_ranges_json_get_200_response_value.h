@@ -21,9 +21,10 @@ typedef struct _ip_ranges_json_get_200_response_value_t _ip_ranges_json_get_200_
 typedef struct _ip_ranges_json_get_200_response_value_t {
     list_t *ip_ranges; //primitive container
 
+    int _library_owned; // Is the library responsible for freeing this object?
 } _ip_ranges_json_get_200_response_value_t;
 
-_ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create(
+__attribute__((deprecated)) _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create(
     list_t *ip_ranges
 );
 

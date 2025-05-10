@@ -11,9 +11,6 @@ use crate::{models, types::*};
 
 
 /// Object containing IP ranges for a specific regional cell
-
-
-
 #[derive(Debug, Clone, PartialEq, serde::Serialize, serde::Deserialize, validator::Validate)]
 #[cfg_attr(feature = "conversion", derive(frunk::LabelledGeneric))]
 pub struct IpRangesJsonGet200ResponseValue {
@@ -22,6 +19,9 @@ pub struct IpRangesJsonGet200ResponseValue {
     pub ip_ranges: Option<Vec<String>>,
 
 }
+
+
+
 
 
 impl IpRangesJsonGet200ResponseValue {

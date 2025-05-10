@@ -19,7 +19,7 @@ import javax.validation.Valid;
 */
 @Path("/ip_ranges.json")
 @Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2024-11-02T04:09:55.789165563Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2025-05-10T05:06:50.495088549Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class IpRangesJsonApi {
 
     @GET

@@ -46,6 +46,7 @@ class DefaultApi(basePath: kotlin.String = defaultBasePath, client: Call.Factory
     }
 
     /**
+     * GET /ip_ranges.json
      * Retrieve Okta IP ranges
      * Returns IP ranges organized by regional cell names.
      * @return kotlin.collections.Map<kotlin.String, IpRangesJsonGet200ResponseValue>
@@ -76,6 +77,7 @@ class DefaultApi(basePath: kotlin.String = defaultBasePath, client: Call.Factory
     }
 
     /**
+     * GET /ip_ranges.json
      * Retrieve Okta IP ranges
      * Returns IP ranges organized by regional cell names.
      * @return ApiResponse<kotlin.collections.Map<kotlin.String, IpRangesJsonGet200ResponseValue>?>

@@ -4,7 +4,7 @@
    "OpenAPI specification and a set of generated API clients for Okta IP Ranges"},
   {vsn, "1.0.0"},
   {registered, []},
-  {applications, [kernel, stdlib, public_key, ssl, inets, ranch, cowboy]},
+  {applications, [kernel, stdlib, public_key, ssl, inets, ranch, cowboy, jesse]},
   {env, []},
   {modules, []},
   {licenses, ["MPL-2.0"]},

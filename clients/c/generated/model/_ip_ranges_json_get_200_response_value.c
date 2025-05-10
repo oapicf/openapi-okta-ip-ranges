@@ -5,7 +5,7 @@
 
 
 
-_ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create(
+static _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create_internal(
     list_t *ip_ranges
     ) {
     _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_local_var = malloc(sizeof(_ip_ranges_json_get_200_response_value_t));
@@ -14,12 +14,24 @@ _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value
     }
     _ip_ranges_json_get_200_response_value_local_var->ip_ranges = ip_ranges;
 
+    _ip_ranges_json_get_200_response_value_local_var->_library_owned = 1;
     return _ip_ranges_json_get_200_response_value_local_var;
 }
 
+__attribute__((deprecated)) _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create(
+    list_t *ip_ranges
+    ) {
+    return _ip_ranges_json_get_200_response_value_create_internal (
+        ip_ranges
+        );
+}
 
 void _ip_ranges_json_get_200_response_value_free(_ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value) {
     if(NULL == _ip_ranges_json_get_200_response_value){
+        return ;
+    }
+    if(_ip_ranges_json_get_200_response_value->_library_owned != 1){
+        fprintf(stderr, "WARNING: %s() does NOT free objects allocated by the user\n", "_ip_ranges_json_get_200_response_value_free");
         return ;
     }
     listEntry_t *listEntry;
@@ -45,7 +57,7 @@ cJSON *_ip_ranges_json_get_200_response_value_convertToJSON(_ip_ranges_json_get_
 
     listEntry_t *ip_rangesListEntry;
     list_ForEach(ip_rangesListEntry, _ip_ranges_json_get_200_response_value->ip_ranges) {
-    if(cJSON_AddStringToObject(ip_ranges, "", (char*)ip_rangesListEntry->data) == NULL)
+    if(cJSON_AddStringToObject(ip_ranges, "", ip_rangesListEntry->data) == NULL)
     {
         goto fail;
     }
@@ -69,6 +81,9 @@ _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value
 
     // _ip_ranges_json_get_200_response_value->ip_ranges
     cJSON *ip_ranges = cJSON_GetObjectItemCaseSensitive(_ip_ranges_json_get_200_response_valueJSON, "ip_ranges");
+    if (cJSON_IsNull(ip_ranges)) {
+        ip_ranges = NULL;
+    }
     if (ip_ranges) { 
     cJSON *ip_ranges_local = NULL;
     if(!cJSON_IsArray(ip_ranges)) {
@@ -87,7 +102,7 @@ _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value
     }
 
 
-    _ip_ranges_json_get_200_response_value_local_var = _ip_ranges_json_get_200_response_value_create (
+    _ip_ranges_json_get_200_response_value_local_var = _ip_ranges_json_get_200_response_value_create_internal (
         ip_ranges ? ip_rangesList : NULL
         );
 

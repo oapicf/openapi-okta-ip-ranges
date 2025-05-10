@@ -31,7 +31,7 @@ public class SpringDocConfiguration {
                                                 .name("MPL-2.0")
                                                 .url("http://unlicense.org")
                                 )
-                                .version("0.10.1-pre.0")
+                                .version("1.0.1-pre.0")
                 )
         ;
     }

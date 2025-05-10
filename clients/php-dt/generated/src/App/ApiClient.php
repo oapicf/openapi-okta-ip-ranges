@@ -11,7 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * OpenAPI Okta IP Ranges
  * OpenAPI specification and a set of generated API clients for Okta IP Ranges
- * The version of the OpenAPI document: 0.10.1-pre.0
+ * The version of the OpenAPI document: 1.0.1-pre.0
  */
 class ApiClient extends OAGAC\AbstractApiClient
 {

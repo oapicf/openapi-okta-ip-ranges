@@ -1,8 +1,5 @@
 .gitignore
-.openapi-generator-ignore
 git_push.sh
 openapiclient-1.0.0-1.rockspec
 openapiclient/api/default_api.lua
 openapiclient/model/_ip_ranges_json_get_200_response_value.lua
-spec/_ip_ranges_json_get_200_response_value_spec.lua
-spec/default_api_spec.lua
