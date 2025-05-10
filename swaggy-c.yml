@@ -9,6 +9,6 @@ scm:
   git_repo: openapi-okta-ip-ranges
 base_dir:
   github_actions: /home/runner/work/openapi-okta-ip-ranges/openapi-okta-ip-ranges/
-  local: /Users/cliffano/dev/workspace-studio/openapi-okta-ip-ranges
+  local: /Users/cliffano/dev/workspace-oapicf/openapi-okta-ip-ranges
   custom: >-
     /home/runner/work/generator-openapi-generator/generator-openapi-generator/stage/openapi-okta-ip-ranges/
