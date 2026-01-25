@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade Swaggy C to 5.1.0
 - Upgrade OpenAPI Generator to 7.18.0
 
+### Fixed
+- Fix incorrect OpenApiOktaIpRangesClient in Ruby config
+
 ## 1.0.0 - 2024-11-02
 ### Changed
 - Upgrade OpenAPI spec version to 3.1.0
