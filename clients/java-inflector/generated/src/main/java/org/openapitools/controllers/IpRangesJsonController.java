@@ -13,7 +13,7 @@ import org.openapitools.model.*;
 import org.openapitools.model.IpRangesJsonGet200ResponseValue;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2026-01-25T00:15:09.940887873Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaInflectorServerCodegen", date = "2026-01-25T04:04:45.556039942Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 public class IpRangesJsonController  {
   /**
    * Uncomment and implement as you see fit.  These operations will map

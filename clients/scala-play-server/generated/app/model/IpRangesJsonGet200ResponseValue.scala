@@ -5,7 +5,7 @@ import play.api.libs.json._
 /**
   * Object containing IP ranges for a specific regional cell
   */
-@javax.annotation.Generated(value = Array("org.openapitools.codegen.languages.ScalaPlayFrameworkServerCodegen"), date = "2026-01-25T00:21:07.246470559Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = Array("org.openapitools.codegen.languages.ScalaPlayFrameworkServerCodegen"), date = "2026-01-25T04:06:17.603398092Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 case class IpRangesJsonGet200ResponseValue(
   ipRanges: Option[List[String]]
 )

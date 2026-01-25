@@ -1,6 +1,6 @@
 # openapi_okta_ip_ranges
 
-OpenApiIplocationClient - the Ruby gem for the OpenAPI Okta IP Ranges
+OpenApiOktaIpRangesClient - the Ruby gem for the OpenAPI Okta IP Ranges
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 
@@ -58,13 +58,13 @@ Please follow the [installation](#installation) procedure and then run the follo
 # Load the gem
 require 'openapi_okta_ip_ranges'
 
-api_instance = OpenApiIplocationClient::DefaultApi.new
+api_instance = OpenApiOktaIpRangesClient::DefaultApi.new
 
 begin
   #Retrieve Okta IP ranges
   result = api_instance.ip_ranges_json_get
   p result
-rescue OpenApiIplocationClient::ApiError => e
+rescue OpenApiOktaIpRangesClient::ApiError => e
   puts "Exception when calling DefaultApi->ip_ranges_json_get: #{e}"
 end
 
@@ -76,12 +76,12 @@ All URIs are relative to *https://s3.amazonaws.com/okta-ip-ranges*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*OpenApiIplocationClient::DefaultApi* | [**ip_ranges_json_get**](docs/DefaultApi.md#ip_ranges_json_get) | **GET** /ip_ranges.json | Retrieve Okta IP ranges
+*OpenApiOktaIpRangesClient::DefaultApi* | [**ip_ranges_json_get**](docs/DefaultApi.md#ip_ranges_json_get) | **GET** /ip_ranges.json | Retrieve Okta IP ranges
 
 
 ## Documentation for Models
 
- - [OpenApiIplocationClient::IpRangesJsonGet200ResponseValue](docs/IpRangesJsonGet200ResponseValue.md)
+ - [OpenApiOktaIpRangesClient::IpRangesJsonGet200ResponseValue](docs/IpRangesJsonGet200ResponseValue.md)
 
 
 ## Documentation for Authorization

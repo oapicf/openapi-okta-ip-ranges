@@ -32,7 +32,7 @@ import javax.annotation.Generated;
   IpRangesJsonGet200ResponseValue.JSON_PROPERTY_IP_RANGES
 })
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@Generated(value="org.openapitools.codegen.languages.JavaMicronautClientCodegen", date="2026-01-25T00:15:15.656732483Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@Generated(value="org.openapitools.codegen.languages.JavaMicronautClientCodegen", date="2026-01-25T04:04:46.620608006Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 @Introspected
 public class IpRangesJsonGet200ResponseValue {
     public static final String JSON_PROPERTY_IP_RANGES = "ip_ranges";

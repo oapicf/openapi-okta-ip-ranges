@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
 import javax.validation.Valid;
 import io.swagger.annotations.*;
 
-@ApiModel(description="Object containing IP ranges for a specific regional cell")@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2026-01-25T00:16:22.385698105Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@ApiModel(description="Object containing IP ranges for a specific regional cell")@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyEapServerCodegen", date = "2026-01-25T04:05:02.827921497Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 public class IpRangesJsonGet200ResponseValue   {
   
   private List<String> ipRanges = new ArrayList<>();

@@ -22,7 +22,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  **/
 @ApiModel(description = "Object containing IP ranges for a specific regional cell")
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2026-01-25T00:16:28.041842742Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2026-01-25T04:05:03.902514668Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 public class IpRangesJsonGet200ResponseValue   {
   private @Valid List<String> ipRanges = new ArrayList<>();
 

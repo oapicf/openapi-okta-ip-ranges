@@ -18,7 +18,7 @@ import javax.validation.Valid;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2026-01-25T00:16:16.019558212Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2026-01-25T04:05:01.592226443Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 public interface IpRangesJsonApiService {
       Response ipRangesJsonGet(SecurityContext securityContext)
       throws NotFoundException;

@@ -14,7 +14,7 @@ To see how to make this your own, look here:
 [README]((https://openapi-generator.tech))
 
 - API version: 1.0.1-pre.0
-- Build date: 2026-01-25T00:20:31.180135818Z[Etc/UTC]
+- Build date: 2026-01-25T04:06:05.921656102Z[Etc/UTC]
 - Generator version: 7.18.0
 
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)

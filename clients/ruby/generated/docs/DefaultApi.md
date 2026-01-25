@@ -1,4 +1,4 @@
-# OpenApiIplocationClient::DefaultApi
+# OpenApiOktaIpRangesClient::DefaultApi
 
 All URIs are relative to *https://s3.amazonaws.com/okta-ip-ranges*
 
@@ -21,13 +21,13 @@ Returns IP ranges organized by regional cell names.
 require 'time'
 require 'openapi_okta_ip_ranges'
 
-api_instance = OpenApiIplocationClient::DefaultApi.new
+api_instance = OpenApiOktaIpRangesClient::DefaultApi.new
 
 begin
   # Retrieve Okta IP ranges
   result = api_instance.ip_ranges_json_get
   p result
-rescue OpenApiIplocationClient::ApiError => e
+rescue OpenApiOktaIpRangesClient::ApiError => e
   puts "Error when calling DefaultApi->ip_ranges_json_get: #{e}"
 end
 ```
@@ -45,7 +45,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Hash<String, IpRangesJsonGet200ResponseValue>>
-rescue OpenApiIplocationClient::ApiError => e
+rescue OpenApiOktaIpRangesClient::ApiError => e
   puts "Error when calling DefaultApi->ip_ranges_json_get_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenApiIplocationClient::IpRangesJsonGet200ResponseValue
+# OpenApiOktaIpRangesClient::IpRangesJsonGet200ResponseValue
 
 ## Properties
 
@@ -11,7 +11,7 @@
 ```ruby
 require 'openapi_okta_ip_ranges'
 
-instance = OpenApiIplocationClient::IpRangesJsonGet200ResponseValue.new(
+instance = OpenApiOktaIpRangesClient::IpRangesJsonGet200ResponseValue.new(
   ip_ranges: null
 )
 ```

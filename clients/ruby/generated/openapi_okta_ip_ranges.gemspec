@@ -17,7 +17,7 @@ require "openapi_okta_ip_ranges/version"
 
 Gem::Specification.new do |s|
   s.name        = "openapi_okta_ip_ranges"
-  s.version     = OpenApiIplocationClient::VERSION
+  s.version     = OpenApiOktaIpRangesClient::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI Clients Factory"]
   s.email       = ["blah+oapicf@cliffano.com"]

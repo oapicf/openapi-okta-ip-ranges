@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .phplint.yml
 .travis.yml
@@ -17,5 +16,3 @@ src/HeaderSelector.php
 src/Model/IpRangesJsonGet200ResponseValue.php
 src/Model/ModelInterface.php
 src/ObjectSerializer.php
-tests/Api/DefaultApiTest.php
-tests/Model/IpRangesJsonGet200ResponseValueTest.php

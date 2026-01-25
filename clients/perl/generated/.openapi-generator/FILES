@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 bin/autodoc
@@ -14,5 +13,3 @@ lib/WWW/OpenAPIClient/DefaultApi.pm
 lib/WWW/OpenAPIClient/Object/IpRangesJsonGet200ResponseValue.pm
 lib/WWW/OpenAPIClient/Role.pm
 lib/WWW/OpenAPIClient/Role/AutoDoc.pm
-t/DefaultApiTest.t
-t/IpRangesJsonGet200ResponseValueTest.t

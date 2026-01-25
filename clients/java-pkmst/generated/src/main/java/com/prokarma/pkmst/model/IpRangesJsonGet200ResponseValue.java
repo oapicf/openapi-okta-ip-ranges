@@ -19,7 +19,7 @@ import java.util.List;
  */
 @ApiModel(description = "Object containing IP ranges for a specific regional cell")
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPKMSTServerCodegen", date = "2026-01-25T00:15:31.727365684Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPKMSTServerCodegen", date = "2026-01-25T04:04:50.215804039Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 public class IpRangesJsonGet200ResponseValue   {
   @JsonProperty("ip_ranges")
   
