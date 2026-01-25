@@ -22,6 +22,7 @@ Version matrix
 
 | OpenAPI Okta IP Ranges Version | OpenAPI Version | OpenAPI Generator Version |
 |--------------------------------|-----------------|---------------------------|
+| 1.1.0 | 3.1.0 | 7.18.0 |
 | 1.0.0 | 3.1.0 | 7.9.0 |
 | 0.10.0 | 3.0.0 | 7.9.0 |
 
