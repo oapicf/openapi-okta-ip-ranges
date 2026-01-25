@@ -7,7 +7,7 @@ All URIs are relative to *https://s3.amazonaws.com/okta-ip-ranges*
 
 | Class | Method | HTTP request | Description |
 |------------ | ------------- | ------------- | -------------|
-| *DefaultApi* | [**ipRangesJsonGet**](Apis/DefaultApi.md#iprangesjsonget) | **GET** /ip_ranges.json | Retrieve Okta IP ranges |
+| *DefaultApi* | [**ipRangesJsonGet**](Apis/DefaultApi.md#ipRangesJsonGet) | **GET** /ip_ranges.json | Retrieve Okta IP ranges |
 
 
 <a name="documentation-for-models"></a>

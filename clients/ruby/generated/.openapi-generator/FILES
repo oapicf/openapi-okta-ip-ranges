@@ -13,6 +13,7 @@ lib/openapi_okta_ip_ranges.rb
 lib/openapi_okta_ip_ranges/api/default_api.rb
 lib/openapi_okta_ip_ranges/api_client.rb
 lib/openapi_okta_ip_ranges/api_error.rb
+lib/openapi_okta_ip_ranges/api_model_base.rb
 lib/openapi_okta_ip_ranges/configuration.rb
 lib/openapi_okta_ip_ranges/models/ip_ranges_json_get200_response_value.rb
 lib/openapi_okta_ip_ranges/version.rb

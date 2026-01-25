@@ -36,8 +36,11 @@ export class DefaultApi extends runtime.BaseAPI {
 
         const headerParameters: runtime.HTTPHeaders = {};
 
+
+        let urlPath = `/ip_ranges.json`;
+
         const response = await this.request({
-            path: `/ip_ranges.json`,
+            path: urlPath,
             method: 'GET',
             headers: headerParameters,
             query: queryParameters,

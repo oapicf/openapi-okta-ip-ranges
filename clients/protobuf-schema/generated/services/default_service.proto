@@ -23,6 +23,7 @@ service DefaultService {
 }
 
 message IpRangesJsonGetResponse {
-  IpRangesJsonGet200ResponseValue data = 1;
+    oneof response {
+        IpRangesJsonGet200ResponseValue ip_ranges_json_get200_response_value_200 = 1;
+    }
 }
-

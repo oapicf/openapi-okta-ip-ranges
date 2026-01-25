@@ -1,5 +1,7 @@
 apis/DefaultApi.ts
 apis/index.ts
+docs/DefaultApi.md
+docs/IpRangesJsonGet200ResponseValue.md
 index.ts
 models/IpRangesJsonGet200ResponseValue.ts
 models/index.ts

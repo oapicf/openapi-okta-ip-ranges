@@ -17,6 +17,8 @@ pub enum IpRangesJsonGetResponse {
 }
 
 
+
+
 /// Default
 #[async_trait]
 #[allow(clippy::ptr_arg)]
@@ -26,6 +28,7 @@ pub trait Default<E: std::fmt::Debug + Send + Sync + 'static = ()>: super::Error
     /// IpRangesJsonGet - GET /okta-ip-ranges/ip_ranges.json
     async fn ip_ranges_json_get(
     &self,
+    
     method: &Method,
     host: &Host,
     cookies: &CookieJar,

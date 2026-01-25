@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **ip_ranges_json_get**
-> ip_ranges_json_get(req::HTTP.Request;) -> Dict{String, IpRangesJsonGet200ResponseValue}
+> `ip_ranges_json_get`(req::`HTTP.Request`;) -> `Dict{String, IpRangesJsonGet200ResponseValue}`
 
 Retrieve Okta IP ranges
 
@@ -19,7 +19,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Dict{String, IpRangesJsonGet200ResponseValue}**](IpRangesJsonGet200ResponseValue.md)
+[**`Dict{String, IpRangesJsonGet200ResponseValue}`**](IpRangesJsonGet200ResponseValue.md)
 
 ### Authorization
 

@@ -20,3 +20,4 @@ message IpRangesJsonGet200ResponseValue {
   repeated string ip_ranges = 333966100;
 
 }
+

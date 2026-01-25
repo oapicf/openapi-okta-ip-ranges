@@ -7,7 +7,66 @@ use validator::Validate;
 use crate::header;
 use crate::{models, types::*};
 
-      
+#[allow(dead_code)]
+fn from_validation_error(e: validator::ValidationError) -> validator::ValidationErrors {
+  let mut errs = validator::ValidationErrors::new();
+  errs.add("na", e);
+  errs
+}
+
+#[allow(dead_code)]
+pub fn check_xss_string(v: &str) -> std::result::Result<(), validator::ValidationError> {
+    if ammonia::is_html(v) {
+        std::result::Result::Err(validator::ValidationError::new("xss detected"))
+    } else {
+        std::result::Result::Ok(())
+    }
+}
+
+#[allow(dead_code)]
+pub fn check_xss_vec_string(v: &[String]) -> std::result::Result<(), validator::ValidationError> {
+    if v.iter().any(|i| ammonia::is_html(i)) {
+        std::result::Result::Err(validator::ValidationError::new("xss detected"))
+    } else {
+        std::result::Result::Ok(())
+    }
+}
+
+#[allow(dead_code)]
+pub fn check_xss_map_string(
+    v: &std::collections::HashMap<String, String>,
+) -> std::result::Result<(), validator::ValidationError> {
+    if v.keys().any(|k| ammonia::is_html(k)) || v.values().any(|v| ammonia::is_html(v)) {
+        std::result::Result::Err(validator::ValidationError::new("xss detected"))
+    } else {
+        std::result::Result::Ok(())
+    }
+}
+
+#[allow(dead_code)]
+pub fn check_xss_map_nested<T>(
+    v: &std::collections::HashMap<String, T>,
+) -> std::result::Result<(), validator::ValidationError>
+where
+    T: validator::Validate,
+{
+    if v.keys().any(|k| ammonia::is_html(k)) || v.values().any(|v| v.validate().is_err()) {
+        std::result::Result::Err(validator::ValidationError::new("xss detected"))
+    } else {
+        std::result::Result::Ok(())
+    }
+}
+
+#[allow(dead_code)]
+pub fn check_xss_map<T>(v: &std::collections::HashMap<String, T>) -> std::result::Result<(), validator::ValidationError> {
+    if v.keys().any(|k| ammonia::is_html(k)) {
+        std::result::Result::Err(validator::ValidationError::new("xss detected"))
+    } else {
+        std::result::Result::Ok(())
+    }
+}
+
+
 
 
 /// Object containing IP ranges for a specific regional cell
@@ -15,6 +74,7 @@ use crate::{models, types::*};
 #[cfg_attr(feature = "conversion", derive(frunk::LabelledGeneric))]
 pub struct IpRangesJsonGet200ResponseValue {
     #[serde(rename = "ip_ranges")]
+          #[validate(custom(function = "check_xss_vec_string"))]
     #[serde(skip_serializing_if="Option::is_none")]
     pub ip_ranges: Option<Vec<String>>,
 
@@ -22,13 +82,11 @@ pub struct IpRangesJsonGet200ResponseValue {
 
 
 
-
-
 impl IpRangesJsonGet200ResponseValue {
     #[allow(clippy::new_without_default, clippy::too_many_arguments)]
     pub fn new() -> IpRangesJsonGet200ResponseValue {
         IpRangesJsonGet200ResponseValue {
-            ip_ranges: None,
+ ip_ranges: None,
         }
     }
 }
@@ -108,9 +166,7 @@ impl std::convert::TryFrom<header::IntoHeaderValue<IpRangesJsonGet200ResponseVal
         let hdr_value = hdr_value.to_string();
         match HeaderValue::from_str(&hdr_value) {
              std::result::Result::Ok(value) => std::result::Result::Ok(value),
-             std::result::Result::Err(e) => std::result::Result::Err(
-                 format!("Invalid header value for IpRangesJsonGet200ResponseValue - value: {} is invalid {}",
-                     hdr_value, e))
+             std::result::Result::Err(e) => std::result::Result::Err(format!(r#"Invalid header value for IpRangesJsonGet200ResponseValue - value: {hdr_value} is invalid {e}"#))
         }
     }
 }
@@ -124,17 +180,12 @@ impl std::convert::TryFrom<HeaderValue> for header::IntoHeaderValue<IpRangesJson
              std::result::Result::Ok(value) => {
                     match <IpRangesJsonGet200ResponseValue as std::str::FromStr>::from_str(value) {
                         std::result::Result::Ok(value) => std::result::Result::Ok(header::IntoHeaderValue(value)),
-                        std::result::Result::Err(err) => std::result::Result::Err(
-                            format!("Unable to convert header value '{}' into IpRangesJsonGet200ResponseValue - {}",
-                                value, err))
+                        std::result::Result::Err(err) => std::result::Result::Err(format!(r#"Unable to convert header value '{value}' into IpRangesJsonGet200ResponseValue - {err}"#))
                     }
              },
-             std::result::Result::Err(e) => std::result::Result::Err(
-                 format!("Unable to convert header: {:?} to string: {}",
-                     hdr_value, e))
+             std::result::Result::Err(e) => std::result::Result::Err(format!(r#"Unable to convert header: {hdr_value:?} to string: {e}"#))
         }
     }
 }
-
 
 

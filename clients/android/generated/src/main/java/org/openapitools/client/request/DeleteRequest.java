@@ -1,4 +1,4 @@
-/**
+/*
  * OpenAPI Okta IP Ranges
  * OpenAPI specification and a set of generated API clients for Okta IP Ranges
  *

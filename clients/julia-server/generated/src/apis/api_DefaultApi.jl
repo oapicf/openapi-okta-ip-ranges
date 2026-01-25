@@ -14,7 +14,8 @@ end
 function ip_ranges_json_get_validate(handler)
     function ip_ranges_json_get_validate_handler(req::HTTP.Request)
         openapi_params = req.context[:openapi_params]
-        
+        op = "ip_ranges_json_get"
+
         return handler(req)
     end
 end

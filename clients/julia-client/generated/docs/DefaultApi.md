@@ -8,8 +8,8 @@ Method | HTTP request | Description
 
 
 # **ip_ranges_json_get**
-> ip_ranges_json_get(_api::DefaultApi; _mediaType=nothing) -> Dict{String, IpRangesJsonGet200ResponseValue}, OpenAPI.Clients.ApiResponse <br/>
-> ip_ranges_json_get(_api::DefaultApi, response_stream::Channel; _mediaType=nothing) -> Channel{ Dict{String, IpRangesJsonGet200ResponseValue} }, OpenAPI.Clients.ApiResponse
+> `ip_ranges_json_get`(_api::`DefaultApi`; _mediaType=nothing) -> `Dict{String, IpRangesJsonGet200ResponseValue}`, `OpenAPI.Clients.ApiResponse` <br/>
+> `ip_ranges_json_get`(_api::`DefaultApi`, response_stream::`Channel`; _mediaType=nothing) -> `Channel`{ `Dict{String, IpRangesJsonGet200ResponseValue}` }, `OpenAPI.Clients.ApiResponse`
 
 Retrieve Okta IP ranges
 
@@ -20,7 +20,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Dict{String, IpRangesJsonGet200ResponseValue}**](IpRangesJsonGet200ResponseValue.md)
+[**`Dict{String, IpRangesJsonGet200ResponseValue}`**](IpRangesJsonGet200ResponseValue.md)
 
 ### Authorization
 

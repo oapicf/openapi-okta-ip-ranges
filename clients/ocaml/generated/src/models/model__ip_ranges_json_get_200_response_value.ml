@@ -6,12 +6,19 @@
  * Schema Model__ip_ranges_json_get_200_response_value.t : Object containing IP ranges for a specific regional cell
  *)
 
-type t = {
-    ip_ranges: string list;
-} [@@deriving yojson { strict = false }, show ];;
 
-(** Object containing IP ranges for a specific regional cell *)
-let create () : t = {
-    ip_ranges = [];
-}
+
+    
+        type t = {
+                              ip_ranges: string list
+                 [@default []]
+                
+                ; [@key "ip_ranges"]
+                        } [@@deriving yojson { strict = false }, show, eq ];;
+        
+        (** Object containing IP ranges for a specific regional cell *)
+        let create () : t = {
+            ip_ranges = [];
+        }
+    
 

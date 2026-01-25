@@ -1,22 +1,23 @@
 package org.openapitools.model;
 
-import io.swagger.annotations.ApiModel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
-  * Object containing IP ranges for a specific regional cell
- **/
+ * Object containing IP ranges for a specific regional cell
+ */
 @ApiModel(description="Object containing IP ranges for a specific regional cell")
 
 public class IpRangesJsonGet200ResponseValue  {
   
   @ApiModelProperty(value = "")
+
   private List<String> ipRanges = new ArrayList<>();
  /**
    * Get ipRanges

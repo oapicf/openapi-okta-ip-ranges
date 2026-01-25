@@ -8,9 +8,9 @@
 #
 
 # Models
-import openapiclient/models/model__ip_ranges_json_get_200_response_value
+import openapiclient/models/model_ip_ranges_json_get200response_value
 
-export model__ip_ranges_json_get_200_response_value
+export model_ip_ranges_json_get200response_value
 
 # APIs
 import openapiclient/apis/api_default

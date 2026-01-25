@@ -8,7 +8,7 @@
 # ! openapi-generator (https://openapi-generator.tech)
 # ! FROM OPENAPI SPECIFICATION IN JSON.
 # !
-# ! Generator version: 7.12.0
+# ! Generator version: 7.18.0
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -536,7 +536,7 @@ read -r -d '' appdescription <<EOF
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 EOF
-echo "$appdescription" | paste -sd' ' | fold -sw 80
+echo "$appdescription" | paste -sd' ' - | fold -sw 80
 }
 
 
@@ -558,14 +558,14 @@ print_version() {
 ##############################################################################
 print_ipRangesJsonGet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}ipRangesJsonGet - Retrieve Okta IP ranges${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}ipRangesJsonGet - Retrieve Okta IP ranges${OFF}" | paste -sd' ' - | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Returns IP ranges organized by regional cell names." | paste -sd' ' | fold -sw 80
+    echo -e "Returns IP ranges organized by regional cell names." | paste -sd' ' - | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;A JSON object of regional cells with IP ranges.${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    echo -e "${result_color_table[${code:0:1}]}  200;A JSON object of regional cells with IP ranges.${OFF}" | paste -sd' ' - | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
 

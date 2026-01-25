@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.context.request.NativeWebRequest
 import org.springframework.beans.factory.annotation.Autowired
+import org.openapitools.api.IpRangesJsonApiController.Companion.BASE_PATH
 
 import javax.validation.Valid
 import javax.validation.constraints.DecimalMax
@@ -30,7 +31,7 @@ import kotlin.collections.Map
 
 @RestController
 @Validated
-@RequestMapping("\${api.base-path:/okta-ip-ranges}")
+@RequestMapping("\${openapi.openAPIOktaIPRanges.base-path:\${api.base-path:$BASE_PATH}}")
 class IpRangesJsonApiController() {
 
     @Operation(
@@ -42,10 +43,16 @@ class IpRangesJsonApiController() {
     )
     @RequestMapping(
         method = [RequestMethod.GET],
-        value = ["/ip_ranges.json"],
+        value = [PATH_IP_RANGES_JSON_GET /* "/ip_ranges.json" */],
         produces = ["application/json"]
     )
     fun ipRangesJsonGet(): ResponseEntity<Map<String, IpRangesJsonGet200ResponseValue>> {
         return ResponseEntity(HttpStatus.NOT_IMPLEMENTED)
+    }
+
+    companion object {
+        //for your own safety never directly reuse these path definitions in tests
+        const val BASE_PATH: String = "/okta-ip-ranges"
+        const val PATH_IP_RANGES_JSON_GET: String = "/ip_ranges.json"
     }
 }

@@ -19,39 +19,41 @@
                             {
                                 "name": "Retrieve Okta IP ranges",
                                 "request": {
-                                    "method": "GET",
-                                    "header": [
-                                        {
-                                            "key": "Accept",
-                                            "value": "application/json",
-                                            "description": "",
-                                            "disabled": false
-                                        }
-                                    ],
-                                    "body": {
-                                        "mode": "raw",
-                                        "raw": "",
-                                        "options": {
-                                            "raw": {
-                                                "language": "json"
-                                            }
-                                        }
-                                    },
-                                    "url": {
-                                        "raw": "{{baseUrl}}/ip_ranges.json",
-                                        "host": [
-                                            "{{baseUrl}}"
-                                        ],
-                                        "path": [
-                                            "ip_ranges.json"
-                                        ],
-                                        "variable": [
-                                        ],
-                                        "query": [
-                                        ]
-                                    },
-                                    "description": "Returns IP ranges organized by regional cell names."
-                                }
+    "method": "GET",
+    "header": [
+        {
+        "key": "Accept",
+        "value": "application/json",
+        "description": "",
+        "disabled": false
+        }
+    ],
+    "body": {
+    "mode": "raw",
+    "raw": "",
+    "options": {
+    "raw": {
+    "language": "json"
+    }
+    }
+    },
+    "url": {
+    "raw": "{{baseUrl}}/ip_ranges.json",
+    "host": [
+    "{{baseUrl}}"
+    ],
+    "path": [
+        "ip_ranges.json"
+    ],
+    "variable": [
+    ],
+    "query": [
+    ]
+    },
+    "description": "Returns IP ranges organized by regional cell names."
+}
+                                ,"response": [
+                            ]
                             }
                             ]
                         }

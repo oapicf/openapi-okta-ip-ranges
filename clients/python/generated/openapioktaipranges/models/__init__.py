@@ -13,6 +13,6 @@
     Do not edit the class manually.
 """  # noqa: E501
 
-
 # import models into model package
 from openapioktaipranges.models.ip_ranges_json_get200_response_value import IpRangesJsonGet200ResponseValue
+

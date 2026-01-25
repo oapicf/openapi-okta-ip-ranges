@@ -28,7 +28,7 @@ Returns IP ranges organized by regional cell names.
 
 Params:
 
-Return: Dict{String, IpRangesJsonGet200ResponseValue}, OpenAPI.Clients.ApiResponse
+Return: `Dict{String, IpRangesJsonGet200ResponseValue}`, `OpenAPI.Clients.ApiResponse`
 """
 function ip_ranges_json_get(_api::DefaultApi; _mediaType=nothing)
     _ctx = _oacinternal_ip_ranges_json_get(_api; _mediaType=_mediaType)

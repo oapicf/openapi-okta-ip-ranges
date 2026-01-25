@@ -1,16 +1,19 @@
 #![allow(unused_qualifications)]
-
+#[cfg(not(feature = "validate"))]
 use validator::Validate;
 
 use crate::models;
 #[cfg(any(feature = "client", feature = "server"))]
 use crate::header;
+#[cfg(feature = "validate")]
+use serde_valid::Validate;
 
 /// Object containing IP ranges for a specific regional cell
-#[derive(Debug, Clone, PartialEq, serde::Serialize, serde::Deserialize, validator::Validate)]
+#[derive(Debug, Clone, PartialEq, Validate, serde::Serialize, serde::Deserialize)]
 #[cfg_attr(feature = "conversion", derive(frunk::LabelledGeneric))]
 pub struct IpRangesJsonGet200ResponseValue {
     #[serde(rename = "ip_ranges")]
+
     #[serde(skip_serializing_if="Option::is_none")]
     pub ip_ranges: Option<Vec<String>>,
 
@@ -27,10 +30,10 @@ impl IpRangesJsonGet200ResponseValue {
 }
 
 /// Converts the IpRangesJsonGet200ResponseValue value to the Query Parameters representation (style=form, explode=false)
-/// specified in https://swagger.io/docs/specification/serialization/
+/// specified in <https://swagger.io/docs/specification/serialization/>
 /// Should be implemented in a serde serializer
-impl std::string::ToString for IpRangesJsonGet200ResponseValue {
-    fn to_string(&self) -> String {
+impl std::fmt::Display for IpRangesJsonGet200ResponseValue {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let params: Vec<Option<String>> = vec![
             self.ip_ranges.as_ref().map(|ip_ranges| {
                 [
@@ -40,12 +43,12 @@ impl std::string::ToString for IpRangesJsonGet200ResponseValue {
             }),
         ];
 
-        params.into_iter().flatten().collect::<Vec<_>>().join(",")
+        write!(f, "{}", params.into_iter().flatten().collect::<Vec<_>>().join(","))
     }
 }
 
 /// Converts Query Parameters representation (style=form, explode=false) to a IpRangesJsonGet200ResponseValue value
-/// as specified in https://swagger.io/docs/specification/serialization/
+/// as specified in <https://swagger.io/docs/specification/serialization/>
 /// Should be implemented in a serde deserializer
 impl std::str::FromStr for IpRangesJsonGet200ResponseValue {
     type Err = String;
@@ -100,8 +103,7 @@ impl std::convert::TryFrom<header::IntoHeaderValue<IpRangesJsonGet200ResponseVal
         match hyper::header::HeaderValue::from_str(&hdr_value) {
              std::result::Result::Ok(value) => std::result::Result::Ok(value),
              std::result::Result::Err(e) => std::result::Result::Err(
-                 format!("Invalid header value for IpRangesJsonGet200ResponseValue - value: {} is invalid {}",
-                     hdr_value, e))
+                 format!("Invalid header value for IpRangesJsonGet200ResponseValue - value: {hdr_value} is invalid {e}"))
         }
     }
 }
@@ -116,13 +118,11 @@ impl std::convert::TryFrom<hyper::header::HeaderValue> for header::IntoHeaderVal
                     match <IpRangesJsonGet200ResponseValue as std::str::FromStr>::from_str(value) {
                         std::result::Result::Ok(value) => std::result::Result::Ok(header::IntoHeaderValue(value)),
                         std::result::Result::Err(err) => std::result::Result::Err(
-                            format!("Unable to convert header value '{}' into IpRangesJsonGet200ResponseValue - {}",
-                                value, err))
+                            format!("Unable to convert header value '{value}' into IpRangesJsonGet200ResponseValue - {err}"))
                     }
              },
              std::result::Result::Err(e) => std::result::Result::Err(
-                 format!("Unable to convert header: {:?} to string: {}",
-                     hdr_value, e))
+                 format!("Unable to convert header: {hdr_value:?} to string: {e}"))
         }
     }
 }
@@ -138,8 +138,7 @@ impl std::convert::TryFrom<header::IntoHeaderValue<Vec<IpRangesJsonGet200Respons
 
         match hyper::header::HeaderValue::from_str(&hdr_values.join(", ")) {
            std::result::Result::Ok(hdr_value) => std::result::Result::Ok(hdr_value),
-           std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to convert {:?} into a header - {}",
-               hdr_values, e))
+           std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to convert {hdr_values:?} into a header - {e}",))
         }
     }
 }
@@ -159,16 +158,14 @@ impl std::convert::TryFrom<hyper::header::HeaderValue> for header::IntoHeaderVal
                         match <IpRangesJsonGet200ResponseValue as std::str::FromStr>::from_str(hdr_value) {
                             std::result::Result::Ok(value) => std::result::Result::Ok(value),
                             std::result::Result::Err(err) => std::result::Result::Err(
-                                format!("Unable to convert header value '{}' into IpRangesJsonGet200ResponseValue - {}",
-                                    hdr_value, err))
+                                format!("Unable to convert header value '{hdr_value}' into IpRangesJsonGet200ResponseValue - {err}"))
                         }
                     })
                 }).collect::<std::result::Result<std::vec::Vec<_>, String>>()?;
 
                 std::result::Result::Ok(header::IntoHeaderValue(hdr_values))
             },
-            std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to parse header: {:?} as a string - {}",
-                hdr_values, e)),
+            std::result::Result::Err(e) => std::result::Result::Err(format!("Unable to parse header: {hdr_values:?} as a string - {e}")),
         }
     }
 }

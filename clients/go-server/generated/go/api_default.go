@@ -50,12 +50,27 @@ func NewDefaultAPIController(s DefaultAPIServicer, opts ...DefaultAPIOption) *De
 func (c *DefaultAPIController) Routes() Routes {
 	return Routes{
 		"IpRangesJsonGet": Route{
+			"IpRangesJsonGet",
 			strings.ToUpper("Get"),
 			"/okta-ip-ranges/ip_ranges.json",
 			c.IpRangesJsonGet,
 		},
 	}
 }
+
+// OrderedRoutes returns all the api routes in a deterministic order for the DefaultAPIController
+func (c *DefaultAPIController) OrderedRoutes() []Route {
+	return []Route{
+		Route{
+			"IpRangesJsonGet",
+			strings.ToUpper("Get"),
+			"/okta-ip-ranges/ip_ranges.json",
+			c.IpRangesJsonGet,
+		},
+	}
+}
+
+
 
 // IpRangesJsonGet - Retrieve Okta IP ranges
 func (c *DefaultAPIController) IpRangesJsonGet(w http.ResponseWriter, r *http.Request) {

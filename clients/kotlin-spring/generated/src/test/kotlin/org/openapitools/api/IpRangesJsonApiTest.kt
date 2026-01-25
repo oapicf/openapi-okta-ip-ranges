@@ -16,6 +16,7 @@ class IpRangesJsonApiTest {
      */
     @Test
     fun ipRangesJsonGetTest() {
+        
         val response: ResponseEntity<Map<String, IpRangesJsonGet200ResponseValue>> = api.ipRangesJsonGet()
 
         // TODO: test validations

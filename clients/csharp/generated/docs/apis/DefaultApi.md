@@ -14,60 +14,6 @@ Retrieve Okta IP ranges
 
 Returns IP ranges organized by regional cell names.
 
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
-
-namespace Example
-{
-    public class IpRangesJsonGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://s3.amazonaws.com/okta-ip-ranges";
-            var apiInstance = new DefaultApi(config);
-
-            try
-            {
-                // Retrieve Okta IP ranges
-                Dictionary<string, IpRangesJsonGet200ResponseValue> result = apiInstance.IpRangesJsonGet();
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling DefaultApi.IpRangesJsonGet: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-#### Using the IpRangesJsonGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Retrieve Okta IP ranges
-    ApiResponse<Dictionary<string, IpRangesJsonGet200ResponseValue>> response = apiInstance.IpRangesJsonGetWithHttpInfo();
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling DefaultApi.IpRangesJsonGetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
 
 ### Parameters
 This endpoint does not need any parameter.

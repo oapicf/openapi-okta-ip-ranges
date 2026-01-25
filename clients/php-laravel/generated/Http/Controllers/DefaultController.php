@@ -64,12 +64,8 @@ class DefaultController extends Controller
             return response()->json(['error' => 'Invalid input'], 400);
         }
 
-        try {
-            $apiResult = $this->api->ipRangesJsonGet();
-        } catch (\Exception $exception) {
-            // This shouldn't happen
-            return response()->json(['error' => $exception->getMessage()], 500);
-        }
+
+        $apiResult = $this->api->ipRangesJsonGet();
 
         if (is_array($apiResult)) {
             $serialized = array_map(fn ($item) => $this->serde->serialize($item, format: 'array'), $apiResult);

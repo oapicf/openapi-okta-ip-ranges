@@ -10,7 +10,7 @@ To see how to make this your own, look here:
 [README]((https://openapi-generator.tech))
 
 - API version: 1.0.1-pre.0
-- Generator version: 7.12.0
+- Generator version: 7.18.0
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)
 
 ## QHTTPEngine

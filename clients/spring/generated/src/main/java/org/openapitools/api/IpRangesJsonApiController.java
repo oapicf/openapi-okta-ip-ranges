@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2024-11-02T04:13:12.168633072Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-01-25T00:12:56.891180183Z[Etc/UTC]", comments = "Generator version: 7.18.0")
 @Controller
 @RequestMapping("${openapi.openAPIOktaIPRanges.base-path:/okta-ip-ranges}")
 public class IpRangesJsonApiController implements IpRangesJsonApi {

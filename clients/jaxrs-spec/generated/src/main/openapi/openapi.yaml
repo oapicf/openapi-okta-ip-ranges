@@ -25,7 +25,7 @@ paths:
             application/json:
               schema:
                 additionalProperties:
-                  $ref: '#/components/schemas/_ip_ranges_json_get_200_response_value'
+                  $ref: "#/components/schemas/_ip_ranges_json_get_200_response_value"
           description: A JSON object of regional cells with IP ranges.
       summary: Retrieve Okta IP ranges
       x-accepts:

@@ -15,16 +15,21 @@ Base.@kwdef mutable struct IpRangesJsonGet200ResponseValue <: OpenAPI.APIModel
     ip_ranges::Union{Nothing, Vector{String}} = nothing
 
     function IpRangesJsonGet200ResponseValue(ip_ranges, )
-        OpenAPI.validate_property(IpRangesJsonGet200ResponseValue, Symbol("ip_ranges"), ip_ranges)
-        return new(ip_ranges, )
+        o = new(ip_ranges, )
+        OpenAPI.validate_properties(o)
+        return o
     end
 end # type IpRangesJsonGet200ResponseValue
 
 const _property_types_IpRangesJsonGet200ResponseValue = Dict{Symbol,String}(Symbol("ip_ranges")=>"Vector{String}", )
 OpenAPI.property_type(::Type{ IpRangesJsonGet200ResponseValue }, name::Symbol) = Union{Nothing,eval(Base.Meta.parse(_property_types_IpRangesJsonGet200ResponseValue[name]))}
 
-function check_required(o::IpRangesJsonGet200ResponseValue)
+function OpenAPI.check_required(o::IpRangesJsonGet200ResponseValue)
     true
+end
+
+function OpenAPI.validate_properties(o::IpRangesJsonGet200ResponseValue)
+    OpenAPI.validate_property(IpRangesJsonGet200ResponseValue, Symbol("ip_ranges"), o.ip_ranges)
 end
 
 function OpenAPI.validate_property(::Type{ IpRangesJsonGet200ResponseValue }, name::Symbol, val)

@@ -13,8 +13,8 @@ To see how to make this your own, look here:
 [README](https://openapi-generator.tech)
 
 - API version: 1.0.1-pre.0
-- Build date: 2025-05-10T05:06:08.975300647Z[Etc/UTC]
-- Generator version: 7.12.0
+- Build date: 2026-01-25T00:13:43.923669249Z[Etc/UTC]
+- Generator version: 7.18.0
 For more information, please visit [https://github.com/oapicf/openapi-okta-ip-ranges](https://github.com/oapicf/openapi-okta-ip-ranges)
 
 ### Running the server

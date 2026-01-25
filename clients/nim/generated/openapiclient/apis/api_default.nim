@@ -18,17 +18,14 @@ import tables
 import typetraits
 import uri
 
-import ../models/model__ip_ranges_json_get_200_response_value
+import ../models/model_ip_ranges_json_get200response_value
 
 const basepath = "https://s3.amazonaws.com/okta-ip-ranges"
 
 template constructResult[T](response: Response): untyped =
   if response.code in {Http200, Http201, Http202, Http204, Http206}:
     try:
-      when name(stripGenericParams(T.typedesc).typedesc) == name(Table):
-        (some(json.to(parseJson(response.body), T.typedesc)), response)
-      else:
-        (some(marshal.to[T](response.body)), response)
+      (some(to(parseJson(response.body), T)), response)
     except JsonParsingError:
       # The server returned a malformed response though the response code is 2XX
       # TODO: need better error handling

@@ -1,5 +1,7 @@
 # OpenAPI\Client\DefaultApi
 
+
+
 All URIs are relative to https://s3.amazonaws.com/okta-ip-ranges, except if the operation defines another base path.
 
 | Method | HTTP request | Description |

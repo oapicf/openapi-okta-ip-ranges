@@ -82,7 +82,7 @@ private:
     /// <remarks>
     /// Returns IP ranges organized by regional cell names.
     /// </remarks>
-    virtual void ip_ranges_json_get(Pistache::Http::ResponseWriter &response) = 0;
+    virtual void ip_ranges_json_get( Pistache::Http::ResponseWriter &response) = 0;
 
 };
 
