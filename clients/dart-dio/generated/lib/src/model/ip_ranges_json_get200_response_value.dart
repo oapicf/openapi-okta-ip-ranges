@@ -74,8 +74,9 @@ class _$IpRangesJsonGet200ResponseValueSerializer implements PrimitiveSerializer
         case r'ip_ranges':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(String)]),
-          ) as BuiltList<String>;
+            specifiedType: const FullType.nullable(BuiltList, [FullType(String)]),
+          ) as BuiltList<String>?;
+          if (valueDes == null) continue;
           result.ipRanges.replace(valueDes);
           break;
         default:

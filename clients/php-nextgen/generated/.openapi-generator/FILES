@@ -15,4 +15,5 @@ src/FormDataProcessor.php
 src/HeaderSelector.php
 src/Model/IpRangesJsonGet200ResponseValue.php
 src/Model/ModelInterface.php
+src/Model/OneOfInterface.php
 src/ObjectSerializer.php

@@ -1,3 +1,10 @@
+README.md
+pom.xml
+src/main/java/org/openapitools/OpenApiGeneratorApplication.java
+src/main/java/org/openapitools/RFC3339DateFormat.java
 src/main/java/org/openapitools/RestConfiguration.java
-src/main/java/org/openapitools/api/DefaultApi.java
+src/main/java/org/openapitools/api/IpRangesJsonApi.java
+src/main/java/org/openapitools/api/IpRangesJsonApiRoutesImpl.java
 src/main/java/org/openapitools/model/IpRangesJsonGet200ResponseValue.java
+src/main/resources/application.properties
+src/test/java/org/openapitools/api/IpRangesJsonApiTest.java

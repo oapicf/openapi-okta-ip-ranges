@@ -8,8 +8,8 @@
 #include "Helpers.h"
 #include <list>
 
-#include <map>
 #include "_ip_ranges_json_get_200_response_value.h"
+#include <map>
 
 namespace Tiny {
 
@@ -22,7 +22,7 @@ class DefaultApi : public Service {
 public:
     DefaultApi() = default;
 
-    virtual ~DefaultApi() = default;
+    virtual ~DefaultApi();
 
     /**
     * Retrieve Okta IP ranges.

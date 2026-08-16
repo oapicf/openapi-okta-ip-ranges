@@ -1,8 +1,8 @@
 # Documentation for OpenAPI Okta IP Ranges
 
-- API version: 1.0.1-pre.0
+- API version: 1.1.1-pre.0
 
-- Generator version: 7.18.0
+- Generator version: 7.24.0
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 

@@ -21,7 +21,7 @@ class DefaultApi {
   /// Returns IP ranges organized by regional cell names.
   ///
   /// Note: This method returns the HTTP [Response].
-  Future<Response> ipRangesJsonGetWithHttpInfo() async {
+  Future<Response> ipRangesJsonGetWithHttpInfo({ Future<void>? abortTrigger, }) async {
     // ignore: prefer_const_declarations
     final path = r'/ip_ranges.json';
 
@@ -43,14 +43,15 @@ class DefaultApi {
       headerParams,
       formParams,
       contentTypes.isEmpty ? null : contentTypes.first,
+      abortTrigger: abortTrigger,
     );
   }
 
   /// Retrieve Okta IP ranges
   ///
   /// Returns IP ranges organized by regional cell names.
-  Future<Map<String, IpRangesJsonGet200ResponseValue>?> ipRangesJsonGet() async {
-    final response = await ipRangesJsonGetWithHttpInfo();
+  Future<Map<String, IpRangesJsonGet200ResponseValue>?> ipRangesJsonGet({ Future<void>? abortTrigger, }) async {
+    final response = await ipRangesJsonGetWithHttpInfo(abortTrigger: abortTrigger,);
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
     }

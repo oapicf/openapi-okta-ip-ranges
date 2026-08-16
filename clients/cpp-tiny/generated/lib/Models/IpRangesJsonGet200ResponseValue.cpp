@@ -82,7 +82,7 @@ _ip_ranges_json_get_200_response_value::getIpRanges()
 }
 
 void
-_ip_ranges_json_get_200_response_value::setIpRanges(std::list <std::string> ip_ranges)
+_ip_ranges_json_get_200_response_value::setIpRanges(std::list<std::string> ip_ranges)
 {
 	this->ip_ranges = ip_ranges;
 }

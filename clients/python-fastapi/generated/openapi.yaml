@@ -9,7 +9,7 @@ info:
   license:
     name: MPL-2.0
   title: OpenAPI Okta IP Ranges
-  version: 1.0.1-pre.0
+  version: 1.1.1-pre.0
 servers:
 - url: https://s3.amazonaws.com/okta-ip-ranges
 paths:
@@ -39,4 +39,5 @@ components:
             type: string
           title: ip_ranges
           type: array
+          default: null
       title: _ip_ranges_json_get_200_response_value

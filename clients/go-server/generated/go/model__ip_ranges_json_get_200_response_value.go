@@ -5,7 +5,7 @@
  *
  * OpenAPI specification and a set of generated API clients for Okta IP Ranges
  *
- * API version: 1.0.1-pre.0
+ * API version: 1.1.1-pre.0
  * Contact: blah+oapicf@cliffano.com
  */
 
@@ -20,7 +20,8 @@ type IpRangesJsonGet200ResponseValue struct {
 	IpRanges []string `json:"ip_ranges,omitempty"`
 }
 
-// AssertIpRangesJsonGet200ResponseValueRequired checks if the required fields are not zero-ed
+// AssertIpRangesJsonGet200ResponseValueRequired checks complex required fields (models, arrays, maps) and embedded parents.
+// Primitive required fields are validated for JSON request bodies in UnmarshalJSON so zero values remain valid.
 func AssertIpRangesJsonGet200ResponseValueRequired(obj IpRangesJsonGet200ResponseValue) error {
 	return nil
 }

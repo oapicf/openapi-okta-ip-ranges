@@ -13,7 +13,7 @@ import javax.validation.Valid;
 /**
  * Object containing IP ranges for a specific regional cell
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2026-01-25T04:04:51.409701168Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPlayFrameworkCodegen", date = "2026-08-16T02:01:21.437057860Z[Etc/UTC]", comments = "Generator version: 7.24.0")
 @SuppressWarnings({"UnusedReturnValue", "WeakerAccess"})
 public class IpRangesJsonGet200ResponseValue   {
   @JsonProperty("ip_ranges")
@@ -79,10 +79,7 @@ public class IpRangesJsonGet200ResponseValue   {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

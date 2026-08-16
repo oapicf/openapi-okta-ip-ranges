@@ -9,7 +9,7 @@ info:
   license:
     name: MPL-2.0
   title: OpenAPI Okta IP Ranges
-  version: 1.0.1-pre.0
+  version: 1.1.1-pre.0
 servers:
 - url: https://s3.amazonaws.com/okta-ip-ranges
 paths:
@@ -40,3 +40,4 @@ components:
             description: IP range in CIDR notation
             type: string
           type: array
+          default: null

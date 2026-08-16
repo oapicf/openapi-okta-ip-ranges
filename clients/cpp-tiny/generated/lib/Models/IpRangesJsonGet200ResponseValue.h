@@ -52,7 +52,7 @@ public:
 
 	/*! \brief Set 
 	 */
-	void setIpRanges(std::list <std::string> ip_ranges);
+	void setIpRanges(std::list<std::string> ip_ranges);
 
 
     private:

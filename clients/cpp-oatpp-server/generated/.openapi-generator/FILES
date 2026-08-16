@@ -1,0 +1,8 @@
+.openapi-generator-ignore
+CMakeLists.txt
+README.md
+api/DefaultApi.hpp
+impl/DefaultApiController.cpp
+impl/DefaultApiController.hpp
+main-api-server.cpp
+model/_ip_ranges_json_get_200_response_value.hpp

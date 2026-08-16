@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.context.request.NativeWebRequest
 import org.springframework.beans.factory.annotation.Autowired
-import org.openapitools.api.IpRangesJsonApiController.Companion.BASE_PATH
 
 import javax.validation.Valid
 import javax.validation.constraints.DecimalMax
@@ -31,7 +30,7 @@ import kotlin.collections.Map
 
 @RestController
 @Validated
-@RequestMapping("\${openapi.openAPIOktaIPRanges.base-path:\${api.base-path:$BASE_PATH}}")
+@RequestMapping("\${api.base-path:/okta-ip-ranges}")
 class IpRangesJsonApiController() {
 
     @Operation(
@@ -43,7 +42,8 @@ class IpRangesJsonApiController() {
     )
     @RequestMapping(
         method = [RequestMethod.GET],
-        value = [PATH_IP_RANGES_JSON_GET /* "/ip_ranges.json" */],
+        // "/ip_ranges.json"
+        value = [PATH_IP_RANGES_JSON_GET],
         produces = ["application/json"]
     )
     fun ipRangesJsonGet(): ResponseEntity<Map<String, IpRangesJsonGet200ResponseValue>> {

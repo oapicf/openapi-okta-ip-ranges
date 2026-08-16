@@ -12,18 +12,21 @@ static _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_respons
     if (!_ip_ranges_json_get_200_response_value_local_var) {
         return NULL;
     }
-    _ip_ranges_json_get_200_response_value_local_var->ip_ranges = ip_ranges;
-
+    memset(_ip_ranges_json_get_200_response_value_local_var, 0, sizeof(_ip_ranges_json_get_200_response_value_t));
     _ip_ranges_json_get_200_response_value_local_var->_library_owned = 1;
+    _ip_ranges_json_get_200_response_value_local_var->ip_ranges = ip_ranges;
     return _ip_ranges_json_get_200_response_value_local_var;
 }
 
 __attribute__((deprecated)) _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value_create(
     list_t *ip_ranges
     ) {
-    return _ip_ranges_json_get_200_response_value_create_internal (
+    _ip_ranges_json_get_200_response_value_t *result = _ip_ranges_json_get_200_response_value_create_internal (
         ip_ranges
         );
+    if (!result) {
+    }
+    return result;
 }
 
 void _ip_ranges_json_get_200_response_value_free(_ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value) {
@@ -102,9 +105,14 @@ _ip_ranges_json_get_200_response_value_t *_ip_ranges_json_get_200_response_value
     }
 
 
+
     _ip_ranges_json_get_200_response_value_local_var = _ip_ranges_json_get_200_response_value_create_internal (
         ip_ranges ? ip_rangesList : NULL
         );
+
+    if (!_ip_ranges_json_get_200_response_value_local_var) {
+        goto end;
+    }
 
     return _ip_ranges_json_get_200_response_value_local_var;
 end:

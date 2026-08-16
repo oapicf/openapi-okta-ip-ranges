@@ -1,4 +1,4 @@
-# # IpRangesJsonGet200ResponseValue
+# IpRangesJsonGet200ResponseValue
 
 ## Properties
 
