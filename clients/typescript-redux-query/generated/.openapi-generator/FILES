@@ -1,9 +1,0 @@
-.gitignore
-.openapi-generator-ignore
-src/apis/DefaultApi.ts
-src/apis/index.ts
-src/index.ts
-src/models/IpRangesJsonGet200ResponseValue.ts
-src/models/index.ts
-src/runtime.ts
-tsconfig.json
