@@ -1,10 +1,9 @@
 <!-- BEGIN:AVATAR -->
-<img align="right" src="https://raw.github.com/oapicf/openapi-okta-ip-ranges/main/avatar.jpg" alt="Avatar"/>
+![Avatar](avatar.jpg)
 <!-- END:AVATAR -->
 
 <!-- BEGIN:BADGES -->
 [![Build Status](https://github.com/oapicf/openapi-okta-ip-ranges/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/oapicf/openapi-okta-ip-ranges/actions/workflows/ci-workflow.yaml)
-<br/>
 <!-- END:BADGES -->
 
 # OpenAPI Okta IP Ranges
@@ -23,6 +22,7 @@ OpenAPI Okta IP Ranges is OpenAPI specification and a set of generated API clien
 
 | OpenAPI Okta IP Ranges Version | OpenAPI Version | OpenAPI Generator Version |
 |--------------------------------|-----------------|---------------------------|
+| 1.2.0 | 3.1.0 | 7.24.0 |
 | 1.1.0 | 3.1.0 | 7.18.0 |
 | 1.0.0 | 3.1.0 | 7.9.0 |
 | 0.10.0 | 3.0.0 | 7.9.0 |
