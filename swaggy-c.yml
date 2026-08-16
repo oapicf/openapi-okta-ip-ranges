@@ -1,6 +1,6 @@
 ---
 spec_uri: specification/openapi-okta-ip-ranges.yml
-version: 1.1.1-pre.0
+version: 1.2.0
 contact:
   name: OpenAPI Okta IP Ranges
   url: https://github.com/oapicf/openapi-okta-ip-ranges
@@ -18,7 +18,9 @@ generator:
   inputs:
     project_id: openapi-okta-ip-ranges
     project_name: OpenAPI Okta IP Ranges
-    project_desc: An OpenAPI specification and a set of generated API clients for Okta IP Ranges
+    project_desc: >-
+      An OpenAPI specification and a set of generated API clients for Okta IP
+      Ranges
     author_name: OpenAPI Clients Factory
     author_email: blah+oapicf@cliffano.com
     author_url: https://github.com/oapicf
