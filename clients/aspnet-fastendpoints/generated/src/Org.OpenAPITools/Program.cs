@@ -15,7 +15,7 @@ builder.Services
             s.Description = """
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 """;
-            s.Version = "1.1.1-pre.0";
+            s.Version = "1.2.1-pre.0";
         };
         o.AutoTagPathSegmentIndex = 0;
     })

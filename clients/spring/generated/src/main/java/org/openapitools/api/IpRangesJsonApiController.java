@@ -19,15 +19,15 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.context.request.NativeWebRequest;
 
-import javax.validation.constraints.*;
-import javax.validation.Valid;
+import jakarta.validation.constraints.*;
+import jakarta.validation.Valid;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-01-25T00:12:56.891180183Z[Etc/UTC]", comments = "Generator version: 7.18.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-11-07T05:08:30.672804174Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 @Controller
 @RequestMapping("${openapi.openAPIOktaIPRanges.base-path:/okta-ip-ranges}")
 public class IpRangesJsonApiController implements IpRangesJsonApi {

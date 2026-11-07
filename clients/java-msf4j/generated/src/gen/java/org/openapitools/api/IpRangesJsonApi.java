@@ -27,7 +27,7 @@ import javax.ws.rs.*;
 
 
 @io.swagger.annotations.Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2026-08-16T02:01:18.208975876Z[Etc/UTC]", comments = "Generator version: 7.24.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaMSF4JServerCodegen", date = "2026-11-07T05:05:50.583605625Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class IpRangesJsonApi  {
    private final IpRangesJsonApiService delegate = IpRangesJsonApiServiceFactory.getIpRangesJsonApi();
 

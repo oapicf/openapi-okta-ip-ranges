@@ -34,6 +34,6 @@ public interface DefaultApi  {
     @Produces({ "application/json" })
     @ApiOperation(value = "Retrieve Okta IP ranges", tags={  })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map") })
+        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class) })
     public Map<String, IpRangesJsonGet200ResponseValue> ipRangesJsonGet();
 }

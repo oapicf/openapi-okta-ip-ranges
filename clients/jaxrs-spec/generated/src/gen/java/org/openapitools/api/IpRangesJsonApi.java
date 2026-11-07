@@ -19,14 +19,14 @@ import javax.validation.Valid;
 */
 @Path("/ip_ranges.json")
 @Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2026-08-16T02:01:39.481199243Z[Etc/UTC]", comments = "Generator version: 7.24.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSSpecServerCodegen", date = "2026-11-07T05:06:16.050133150Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class IpRangesJsonApi {
 
     @GET
     @Produces({ "application/json" })
     @ApiOperation(value = "Retrieve Okta IP ranges", notes = "Returns IP ranges organized by regional cell names.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map", tags={  })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map")
+        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class)
     })
     public Response ipRangesJsonGet() {
         return Response.ok().entity("magic!").build();

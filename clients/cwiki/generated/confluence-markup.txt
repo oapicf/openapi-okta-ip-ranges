@@ -2,7 +2,7 @@ h1. OpenAPI Okta IP Ranges
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges
 
-*Version:* 1.1.1-pre.0
+*Version:* 1.2.1-pre.0
 
 ----
 
@@ -40,6 +40,7 @@ h4. Responses
   "content" : {
     "application/json" : {
       "schema" : {
+        "type" : "object",
         "additionalProperties" : {
           "$ref" : "#/components/schemas/_ip_ranges_json_get_200_response_value"
         }

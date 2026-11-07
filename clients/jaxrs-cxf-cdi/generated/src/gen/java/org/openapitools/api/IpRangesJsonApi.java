@@ -28,7 +28,7 @@ import javax.validation.Valid;
 @Api
 
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2026-08-16T02:01:31.232452271Z[Etc/UTC]", comments = "Generator version: 7.24.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJAXRSCXFCDIServerCodegen", date = "2026-11-07T05:06:06.235896849Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 
 public class IpRangesJsonApi  {
 
@@ -43,7 +43,7 @@ public class IpRangesJsonApi  {
     @Produces({ "application/json" })
     @ApiOperation(value = "Retrieve Okta IP ranges", notes = "Returns IP ranges organized by regional cell names.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map", tags={  })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map") })
+        @ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class) })
     public Response ipRangesJsonGet() {
         return delegate.ipRangesJsonGet(securityContext);
     }

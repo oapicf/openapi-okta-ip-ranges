@@ -1,6 +1,6 @@
 = OpenAPI Okta IP Ranges
 blah+oapicf@cliffano.com
-1.1.1-pre.0
+1.2.1-pre.0
 :toc: left
 :numbered:
 :toclevels: 4
@@ -71,7 +71,7 @@ map[<<_ip_ranges_json_get_200_response_value>>]
 
 | 200
 | A JSON object of regional cells with IP ranges.
-| Map[<<_ip_ranges_json_get_200_response_value>>] 
+|  <<Map>>
 
 |===
 

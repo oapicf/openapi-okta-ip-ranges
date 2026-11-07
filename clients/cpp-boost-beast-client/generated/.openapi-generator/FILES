@@ -7,5 +7,16 @@ api/HttpClient.h
 api/HttpClientImpl.cpp
 api/HttpClientImpl.h
 model/AnyType.h
+model/NullableField.h
+model/Oas31DeepEqual.h
+model/Oas31ExactJson.h
+model/Oas31ExactNumber.cpp
+model/Oas31ExactNumber.h
+model/Oas31SchemaIr.h
+model/Oas31SchemaRegistry.h
+model/Oas31Validator.h
+model/ValidationTypes.h
 model/_ip_ranges_json_get_200_response_value.cpp
 model/_ip_ranges_json_get_200_response_value.h
+model/schema_ir.generated.cpp
+test/MultipartWireTest.cpp

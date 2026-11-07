@@ -17,7 +17,7 @@
 extern crate futures_util;
 
 pub const BASE_PATH: &str = "/okta-ip-ranges";
-pub const API_VERSION: &str = "1.1.1-pre.0";
+pub const API_VERSION: &str = "1.2.1-pre.0";
 
 #[cfg(feature = "server")]
 pub mod server;

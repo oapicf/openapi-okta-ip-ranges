@@ -15,7 +15,7 @@ use serde::{Serialize, Deserialize};
 type ServiceError = Box<dyn Error + Send + Sync + 'static>;
 
 pub const BASE_PATH: &str = "/okta-ip-ranges";
-pub const API_VERSION: &str = "1.1.1-pre.0";
+pub const API_VERSION: &str = "1.2.1-pre.0";
 
 mod auth;
 pub use auth::{AuthenticationApi, Claims};

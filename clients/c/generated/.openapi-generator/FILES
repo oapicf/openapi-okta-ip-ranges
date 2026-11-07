@@ -1,3 +1,4 @@
+.openapi-generator-ignore
 CMakeLists.txt
 Config.cmake.in
 Packing.cmake
@@ -24,3 +25,4 @@ src/apiKey.c
 src/binary.c
 src/list.c
 uncrustify-rules.cfg
+unit-test/test__ip_ranges_json_get_200_response_value.c

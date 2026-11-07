@@ -5,7 +5,7 @@
  * OpenAPI Okta IP Ranges
  * OpenAPI specification and a set of generated API clients for Okta IP Ranges
  *
- * OpenAPI spec version: 1.1.1-pre.0
+ * OpenAPI spec version: 1.2.1-pre.0
  *
  * Contact: blah+oapicf@cliffano.com
  *

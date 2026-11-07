@@ -30,7 +30,7 @@ import javax.validation.Valid;
 
 
 @io.swagger.annotations.Api(description = "the ip_ranges.json API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2026-08-16T02:01:32.917160586Z[Etc/UTC]", comments = "Generator version: 7.24.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2026-11-07T05:06:08.203094472Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class IpRangesJsonApi  {
    private final IpRangesJsonApiService delegate;
 
@@ -61,7 +61,7 @@ public class IpRangesJsonApi  {
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "Retrieve Okta IP ranges", notes = "Returns IP ranges organized by regional cell names.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map", tags={  })
     @io.swagger.annotations.ApiResponses(value = {
-        @io.swagger.annotations.ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class, responseContainer = "Map")
+        @io.swagger.annotations.ApiResponse(code = 200, message = "A JSON object of regional cells with IP ranges.", response = IpRangesJsonGet200ResponseValue.class)
     })
     public Response ipRangesJsonGet(@Context SecurityContext securityContext)
     throws NotFoundException {

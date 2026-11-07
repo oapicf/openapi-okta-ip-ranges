@@ -9,7 +9,7 @@ info:
   license:
     name: MPL-2.0
   title: OpenAPI Okta IP Ranges
-  version: 1.1.1-pre.0
+  version: 1.2.1-pre.0
 servers:
 - url: https://s3.amazonaws.com/okta-ip-ranges
 paths:
@@ -27,6 +27,7 @@ paths:
               schema:
                 additionalProperties:
                   $ref: "#/components/schemas/_ip_ranges_json_get_200_response_value"
+                type: object
           description: A JSON object of regional cells with IP ranges.
       summary: Retrieve Okta IP ranges
       x-eov-operation-handler: controllers/DefaultController

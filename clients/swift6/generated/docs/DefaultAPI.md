@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 # **ipRangesJsonGet**
 ```swift
-    open class func ipRangesJsonGet(completion: @escaping (_ data: [String: IpRangesJsonGet200ResponseValue]?, _ error: Error?) -> Void)
+    open class func ipRangesJsonGet(apiConfiguration: OpenAPIClientAPIConfiguration = OpenAPIClientAPIConfiguration.shared) async throws(ErrorResponse) -> [String: IpRangesJsonGet200ResponseValue]
 ```
 
 Retrieve Okta IP ranges
@@ -23,15 +23,11 @@ import OpenAPIClient
 
 
 // Retrieve Okta IP ranges
-DefaultAPI.ipRangesJsonGet() { (response, error) in
-    guard error == nil else {
-        print(error)
-        return
-    }
-
-    if (response) {
-        dump(response)
-    }
+do {
+    let response = try await DefaultAPI.ipRangesJsonGet()
+    dump(response)
+} catch {
+    print(error)
 }
 ```
 

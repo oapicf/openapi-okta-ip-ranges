@@ -29,20 +29,20 @@ class DefaultApi(
 
 trait DefaultApiService {
 
-  def ipRangesJsonGet200(responseIpRangesJsonGet200ResponseValuemap: Map[String, IpRangesJsonGet200ResponseValue])(implicit toEntityMarshallerIpRangesJsonGet200ResponseValuemap: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]): Route =
-    complete((200, responseIpRangesJsonGet200ResponseValuemap))
+  def ipRangesJsonGet200(responseIpRangesJsonGet200ResponseValue: Map[String, IpRangesJsonGet200ResponseValue])(implicit toEntityMarshallerIpRangesJsonGet200ResponseValue: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]): Route =
+    complete((200, responseIpRangesJsonGet200ResponseValue))
   /**
    * Code: 200, Message: A JSON object of regional cells with IP ranges., DataType: Map[String, IpRangesJsonGet200ResponseValue]
    */
   def ipRangesJsonGet()
-      (implicit toEntityMarshallerIpRangesJsonGet200ResponseValuemap: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]): Route
+      (implicit toEntityMarshallerIpRangesJsonGet200ResponseValue: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]): Route
 
 }
 
 trait DefaultApiMarshaller {
 
 
-  implicit def toEntityMarshallerIpRangesJsonGet200ResponseValuemap: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]
+  implicit def toEntityMarshallerIpRangesJsonGet200ResponseValue: ToEntityMarshaller[Map[String, IpRangesJsonGet200ResponseValue]]
 
 }
 
