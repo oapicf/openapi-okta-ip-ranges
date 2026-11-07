@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 Apis/DefaultApi.md
 Models/_ip_ranges_json_get_200_response_value.md
 README.md

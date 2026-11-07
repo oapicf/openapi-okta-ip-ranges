@@ -2,7 +2,7 @@
 
 OpenAPI Okta IP Ranges
 - API version: 1.2.1-pre.0
-  - Build date: 2026-11-07T05:05:32.702130784Z[Etc/UTC]
+  - Build date: 2026-11-07T05:51:25.267996705Z[Etc/UTC]
   - Generator version: 7.26.0
 
 OpenAPI specification and a set of generated API clients for Okta IP Ranges

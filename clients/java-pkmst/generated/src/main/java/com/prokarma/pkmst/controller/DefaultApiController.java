@@ -24,7 +24,7 @@ import java.io.IOException;
  * @author pkmst
  *
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPKMSTServerCodegen", date = "2026-11-07T05:05:52.495565577Z[Etc/UTC]", comments = "Generator version: 7.26.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaPKMSTServerCodegen", date = "2026-11-07T05:51:44.159262399Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 @Controller
 public class DefaultApiController implements DefaultApi {
     private final ObjectMapper objectMapper;

@@ -33,7 +33,7 @@ import javax.validation.Valid;
 @JsonPropertyOrder({
   IpRangesJsonGet200ResponseValue.JSON_PROPERTY_IP_RANGES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2026-11-07T05:06:08.203094472Z[Etc/UTC]", comments = "Generator version: 7.26.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaJerseyServerCodegen", date = "2026-11-07T05:51:59.235853552Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class IpRangesJsonGet200ResponseValue   {
   public static final String JSON_PROPERTY_IP_RANGES = "ip_ranges";
   @JsonProperty(JSON_PROPERTY_IP_RANGES)

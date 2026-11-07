@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 git_push.sh
 project.clj
 src/open_api_okta_ip_ranges/api/default.clj

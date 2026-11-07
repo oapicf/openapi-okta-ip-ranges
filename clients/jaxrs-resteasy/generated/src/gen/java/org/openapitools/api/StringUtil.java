@@ -1,6 +1,6 @@
 package org.openapitools.api;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2026-11-07T05:06:12.151579497Z[Etc/UTC]", comments = "Generator version: 7.26.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaResteasyServerCodegen", date = "2026-11-07T05:52:02.943195165Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

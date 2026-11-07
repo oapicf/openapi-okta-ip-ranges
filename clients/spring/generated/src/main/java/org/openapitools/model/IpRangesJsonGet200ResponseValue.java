@@ -25,7 +25,7 @@ import jakarta.annotation.Generated;
 
 @Schema(name = "_ip_ranges_json_get_200_response_value", description = "Object containing IP ranges for a specific regional cell")
 @JsonTypeName("_ip_ranges_json_get_200_response_value")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-11-07T05:08:30.672804174Z[Etc/UTC]", comments = "Generator version: 7.26.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-11-07T05:54:16.448525906Z[Etc/UTC]", comments = "Generator version: 7.26.0")
 public class IpRangesJsonGet200ResponseValue {
 
   private List<String> ipRanges = new ArrayList<>();

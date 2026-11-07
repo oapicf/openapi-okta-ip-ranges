@@ -1,10 +1,7 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 git_push.sh
 shard.yml
-spec/api/ip_ranges_json_spec.cr
-spec/models/ip_ranges_json_get200_response_value_spec.cr
 spec/spec_helper.cr
 src/openapi_client.cr
 src/openapi_client/api/ip_ranges_json.cr
